@@ -12,6 +12,6 @@ namespace ExAkt\ContaoBricksHeaderBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ContaoSkeletonBundle extends Bundle
+class ContaoBricksHeaderBundle extends Bundle
 {
 }
