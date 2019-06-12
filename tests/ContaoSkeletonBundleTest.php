@@ -8,17 +8,17 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace Contao\SkeletonBundle\Tests;
+namespace ExAkt\ContaoBricksHeaderBundle\Tests;
 
-use Contao\SkeletonBundle\ContaoSkeletonBundle;
+use ExAkt\ContaoBricksHeaderBundle\ContaoBricksHeaderBundle;
 use PHPUnit\Framework\TestCase;
 
 class ContaoSkeletonBundleTest extends TestCase
 {
     public function testCanBeInstantiated()
     {
-        $bundle = new ContaoSkeletonBundle();
+        $bundle = new ContaoBricksHeaderBundle();
 
-        $this->assertInstanceOf('Contao\SkeletonBundle\ContaoSkeletonBundle', $bundle);
+        $this->assertInstanceOf('ExAkt\ContaoBricksHeaderBundle\ContaoBricksHeaderBundle', $bundle);
     }
 }
