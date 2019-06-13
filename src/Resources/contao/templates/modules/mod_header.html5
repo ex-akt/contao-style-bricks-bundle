@@ -1,0 +1,15 @@
+<!-- indexer::stop -->
+<div class="header" >
+    <!-- Logo -->
+    <a href="#" class="logo">
+        <span class="symbol">
+            <img src="<?= $this->logoSRC; ?>" alt="" /></span>
+
+            <? if($this->websiteTitle): ?>
+                <span class="title"><?= $this->websiteTitle?></span>
+            <? endif; ?>
+    </a>
+
+
+</div>
+<!-- indexer::continue -->

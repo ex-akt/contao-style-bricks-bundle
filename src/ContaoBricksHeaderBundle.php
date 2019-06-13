@@ -1,11 +1,14 @@
 <?php
 
 /*
- * This file is part of [package name].
+ * This file is part of the ContaoBricksHeaderBundle.
  *
- * (c) John Doe
+ * (c) ex-akt <https://github.com/ex-akt>
  *
+ * @package ContaoBricksHeaderBundle
+ * @author Samuel Heer <https://github.com/samuel.heer>
  * @license LGPL-3.0-or-later
+ * @copyright ex-akt 2019
  */
 
 namespace ExAkt\ContaoBricksHeaderBundle;

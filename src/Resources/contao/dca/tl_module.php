@@ -10,5 +10,3 @@
  * @license LGPL-3.0-or-later
  * @copyright ex-akt 2019
  */
-
-$GLOBALS['FE_MOD']['miscellaneous']['bricks-header'] = \ExAkt\ContaoBricksHeaderBundle\FrontendModule\ModuleHeader::class;
