@@ -17,12 +17,6 @@
         "contao/core": "*",
         "contao/manager-plugin": "<2.0 || >=3.0"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/terminal42/contao-asset-reload.git"
-        }
-    ],
     "require-dev": {
         "contao/manager-plugin": "^2.0",
         "doctrine/doctrine-cache-bundle": "^1.3",
@@ -30,8 +24,7 @@
         "php-http/guzzle6-adapter": "^1.1",
         "php-http/message-factory": "^1.0.2",
         "phpunit/phpunit": "^5.7.26",
-        "symfony/phpunit-bridge": "^3.2",
-        "terminal42/contao-asset-reload": "^0.1@dev"
+        "symfony/phpunit-bridge": "^3.2"
     },
     "extra": {
         "contao-manager-plugin": "ExAkt\\ContaoStyleBricksBundle\\ContaoManager\\Plugin"
