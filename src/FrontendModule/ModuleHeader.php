@@ -11,7 +11,7 @@
  * @copyright ex-akt 2019
  */
 
-namespace ExAkt\ContaoBricksHeaderBundle\FrontendModule;
+namespace ExAkt\ContaoStyleBricksBundle\FrontendModule;
 
 use Contao\FilesModel;
 use Contao\Module;
@@ -34,6 +34,7 @@ class ModuleHeader extends Module
             return '';
         }
 
+        //$this->Template->websiteTitle = '';
         $this->Template->logoSRC = $objFile->path;
     }
 }

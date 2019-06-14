@@ -11,14 +11,14 @@
  * @copyright ex-akt 2019
  */
 
-namespace ExAkt\ContaoBricksHeaderBundle\DependencyInjection;
+namespace ExAkt\ContaoStyleBricksBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class ContaoBricksHeaderExtension extends Extension
+class ContaoStyleBricksBundle extends Extension
 {
     /**
      * {@inheritdoc}

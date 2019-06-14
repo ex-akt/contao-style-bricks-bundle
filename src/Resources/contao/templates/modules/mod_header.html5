@@ -1,13 +1,13 @@
 <!-- indexer::stop -->
-<div class="header" >
+<div class="bricks-header" >
     <!-- Logo -->
     <a href="#" class="logo">
         <span class="symbol">
             <img src="<?= $this->logoSRC; ?>" alt="" /></span>
 
-            <? if($this->websiteTitle): ?>
-                <span class="title"><?= $this->websiteTitle?></span>
-            <? endif; ?>
+            <?php if($this->websiteTitle): ?>
+                <span class="title"><?= $this->websiteTitle ?></span>
+            <?php endif; ?>
     </a>
 
 

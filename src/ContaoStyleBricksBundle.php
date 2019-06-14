@@ -11,10 +11,10 @@
  * @copyright ex-akt 2019
  */
 
-namespace ExAkt\ContaoBricksHeaderBundle;
+namespace ExAkt\ContaoStyleBricksBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ContaoBricksHeaderBundle extends Bundle
+class ContaoStyleBricksBundle extends Bundle
 {
 }

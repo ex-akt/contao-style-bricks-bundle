@@ -13,15 +13,15 @@
 
 namespace ExAkt\ContaoBricksHeaderBundle\Tests;
 
-use ExAkt\ContaoBricksHeaderBundle\ContaoBricksHeaderBundle;
+use ExAkt\ContaoStyleBricksBundle\ContaoStyleBricksBundle;
 use PHPUnit\Framework\TestCase;
 
-class ContaoBricksHeaderBundleTest extends TestCase
+class ContaoStyleBricksBundleTest extends TestCase
 {
     public function testCanBeInstantiated()
     {
-        $bundle = new ContaoBricksHeaderBundle();
+        $bundle = new ContaoStyleBricksBundle();
 
-        $this->assertInstanceOf('ExAkt\ContaoBricksHeaderBundle\ContaoBricksHeaderBundle', $bundle);
+        $this->assertInstanceOf('ExAkt\ContaoStyleBricksBundle\ContaoStyleBricksBundle', $bundle);
     }
 }

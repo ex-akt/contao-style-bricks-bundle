@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<EOF
-This file is part of the ContaoBricksHeaderBundle.
+This file is part of the ContaoStyleBricksBundle.
 
 (c) ex-akt <https://github.com/ex-akt>
 

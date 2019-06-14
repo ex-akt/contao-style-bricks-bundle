@@ -1,0 +1,65 @@
+@import 'logo';
+@import 'navigation';
+
+.bricks-header{
+  @include wrapper-max;
+}
+
+.section-header{
+
+  height: 9rem;
+  clip-path: polygon(0 0%, 100% 0%, 100% 85%, 0 100%);
+
+  @include media-query(screen-sm){
+    height: 8rem;
+    clip-path: polygon(0 0%, 100% 0%, 100% 70%, 0 100%);
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: $color-page-background;
+
+  .mod_article{
+    padding: 0rem;
+    @include media-query(screen-md) {
+      padding: 2rem;
+    }
+  }
+}
+
+.logo{
+  font-size: 1.4rem;
+  color: $color-brand;
+
+}
+
+.shortlink-tel{
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  background-color: $color-default;
+  color: $color-text--inverted;
+  margin-bottom: $base-spacing-unit;
+  padding-left: 1rem;
+
+  a{
+    color: $color-text--inverted;
+  }
+
+  @include media-query(screen-md) {
+    font-size: 1.5rem;
+    float: right;
+    width: auto;
+    background-color: transparent;
+    color: $color-text;
+    margin-bottom: 0;
+    text-align: right;
+
+    a{
+      color: $color-default;
+    }
+  }
+}
