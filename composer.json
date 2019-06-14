@@ -31,7 +31,7 @@
         "php-http/message-factory": "^1.0.2",
         "phpunit/phpunit": "^5.7.26",
         "symfony/phpunit-bridge": "^3.2",
-        "terminal42/contao-asset-reload": "^0.1"
+        "terminal42/contao-asset-reload": "^0.1@dev"
     },
     "extra": {
         "contao-manager-plugin": "ExAkt\\ContaoStyleBricksBundle\\ContaoManager\\Plugin"

@@ -12,12 +12,24 @@ entsprechenden Javascript-Dateien in der app.js statt.
 ## Instructions
 
 ## What's inside?
-- Navigation-Module with Hamburger Button
-- Header-Styles
-- Footer Styles
+- Default Contao settings
+    - prepend_locale: false
+    - enableSearch: false
+    - disableCron: true
+    - folderUrl: false
+    - installPassword: "%install_password%" (define in your app/config/parameters.yml)
+    - dateFormat: "d.m.Y"
+    - datimFormat: "d.m.Y H:i"
+    - timeZone: 'Europe/Berlin'
+    - maxFileSize: 20480000 (2MB)
+    - imageWidth: 3000
+    - imageHeight: 3000
+- Navigation-Module with Hamburger Button (pending)
+- Header-Styles (pending)
+- Footer Styles (pending)
 - Componentes
-    - Hero (Image, Video)
-    - Band for sections
+    - Hero (Image, Video) (pending)
+    - Band for sections (pending)
 
 
 
