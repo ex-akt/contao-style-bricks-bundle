@@ -17,9 +17,13 @@ use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
+use Contao\ManagerPlugin\Config\ConfigPluginInterface;
+use Contao\ManagerPlugin\Dependency\DependentPluginInterface;
+use Symfony\Component\Config\Loader\LoaderInterface;
 use ExAkt\ContaoStyleBricksBundle\ContaoStyleBricksBundle;
 
-class Plugin implements BundlePluginInterface
+
+class Plugin implements BundlePluginInterface, ConfigPluginInterface
 {
     /**
      * {@inheritdoc}
@@ -30,5 +34,13 @@ class Plugin implements BundlePluginInterface
             BundleConfig::create(ContaoStyleBricksBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class]),
         ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function registerContainerConfiguration(LoaderInterface $loader, array $config)
+    {
+        $loader->load('@ContaoStyleBricksBundle/Resources/config/config.yml');
     }
 }
