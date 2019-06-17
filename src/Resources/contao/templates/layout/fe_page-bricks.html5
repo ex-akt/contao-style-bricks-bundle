@@ -101,5 +101,6 @@
 
 <?= $this->mootools ?>
 <script src="<?= $this->asset('app.js') ?>"></script>
+
 </body>
 </html>

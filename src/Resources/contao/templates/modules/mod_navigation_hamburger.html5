@@ -6,7 +6,8 @@
     <span class="hamburger-inner"></span>
   </span>
 </button>
-
-<?php $this->class .= ' nav nav--horizontal invisible' ?>
-<?php $this->insert('mod_navigation', $this->getData()); ?>
 <!-- indexer::continue -->
+
+<?php $this->class .= ' nav nav--horizontal invisible nav-head' ?>
+<?php $this->insert('mod_navigation', $this->getData()); ?>
+

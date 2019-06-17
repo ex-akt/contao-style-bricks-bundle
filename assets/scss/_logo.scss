@@ -1,5 +1,14 @@
-.bricks-header{
-  .symbol img {
-    width: 250px;
+.logo{
+  .symbol{
+    display: inline-block;
+    padding-top: $base-spacing-unit;
+    padding-bottom: $base-spacing-unit;
+    height: $header-height;
+  }
+
+  img{
+    height: 100%;
+    float: left;
   }
 }
+

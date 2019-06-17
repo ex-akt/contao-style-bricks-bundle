@@ -1,0 +1,37 @@
+$header-height: 7rem !default;
+$nav-toggler-height: $base-border-width*5 !default;
+$nav-toggler-color: $color-default;
+$nav-toggler-border: $nav-toggler-height solid $nav-toggler-color;
+
+@import 'logo';
+@import 'navigation/navigation';
+
+.section-header{
+  //overflow: hidden;
+  @extend %clearfix;
+
+  .section-header__inside{
+    @include wrapper-max;
+    @include padding-default;
+  }
+  background-color: #ffff00;
+/*  clip-path: polygon(0 0%, 100% 0%, 100% 85%, 0 100%);
+
+  @include media-query(screen-sm){
+    clip-path: polygon(0 0%, 100% 0%, 100% 70%, 0 100%);
+  }
+
+ // position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: $color-page-background;
+
+  .mod_article{
+    padding: 0rem;
+    @include media-query(screen-md) {
+      padding: 2rem;
+    }
+  }*/
+}

@@ -1,0 +1,8 @@
+{
+  "name": "contao-style-bricks-bundle",
+  "description": "dependencies for contao-style-bricks-bundle",
+  "version": "0.0.1",
+  "devDependencies": {
+    "hamburgers": "1.1.3"
+  }
+}
