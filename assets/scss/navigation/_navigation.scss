@@ -2,61 +2,43 @@
 @import "hamburger-types";
 @import "hamburger";
 
-.hamburger{
-  @include media-query(screen-offcanvas) {
-    display: none;
-  }
-}
-
-.hamburger:focus{
-  outline: none;
-}
-
-.hamburger-right{
-  float: right;
-}
-
-.hamburger-left{
-  float: left;
-}
-
-.hamburger-label{
-  display: block;
-  float: left;
-  padding: 0 1rem;
-}
-
-
-.nav-head {
+.nav-bricks {
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
   height: auto;
 
-  a, strong.active{
-    text-decoration: none;
-    position: relative;
-    padding: 0 1rem;
-    line-height: $header-height;
+  ul {
+    @extend %clearfix;
   }
 
-  li a{
-    padding-top: $nav-toggler-height;
+  li {
+    @include media-query($breakpoint-menu) {
+      float: left;
+    }
+  }
+
+  a,
+  strong.active,
+  strong.trail {
+    text-decoration: none;
+    position: relative;
+    line-height: $header-height;
+    color: $nav--main__color;
+
+    display: block;
+    padding: 0 $nav--main__item-padding;
   }
 
   strong.active, a:hover{
-    border-top: $nav-toggler-border;
-    padding-top: 0;
-  }
-
-  a:hover{
-    color: $color-gray;
+    color: $nav--main__color-hover;
     transition: color 0.3s ease;
+    font-weight: normal;
   }
 }
 
-@include media-query(screen-offcanvas) {
-  .nav-head{
+@include media-query($breakpoint-menu) {
+  .nav-bricks{
     float: right;
     font-size: 1rem;
     width: auto;
@@ -67,6 +49,5 @@
     display: block;
     top: 0;
     left: 0;
-
   }
 }

@@ -1,6 +1,6 @@
 
 <!-- indexer::stop -->
-<button class="hamburger hamburger--squeeze hamburger-right" type="button" aria-label="Menu" aria-controls="navigation">
+<button class="hamburger hamburger--squeeze" type="button" aria-label="Menu" aria-controls="navigation">
     <span class="hamburger-label">Menü</span>
     <span class="hamburger-box">
     <span class="hamburger-inner"></span>
@@ -8,6 +8,6 @@
 </button>
 <!-- indexer::continue -->
 
-<?php $this->class .= ' nav nav--horizontal invisible nav-head' ?>
+<?php $this->class .= ' nav nav-bricks invisible' ?>
 <?php $this->insert('mod_navigation', $this->getData()); ?>
 

@@ -1,0 +1,33 @@
+$header-height: 2rem;
+$logo-height: 10rem;
+$logo-padding: $base-spacing-unit*2;
+
+$nav--main__divider-color: $color-gray-light;
+
+$breakpoint-menu: screen-sm;
+
+@import 'header-base';
+
+.section-header__inside{
+  text-align: center;
+}
+
+.logo{
+  @extend %clearfix;
+}
+
+.nav-bricks{
+  float: none;
+  border-top: 2px solid $nav--main__divider-color;
+  border-bottom: 2px solid $nav--main__divider-color;
+
+  ul{
+    display: inline-block; //center main menu
+  }
+
+  a,
+  strong.active,
+  strong.trail{
+    line-height: 3rem;
+  }
+}

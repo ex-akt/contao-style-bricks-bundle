@@ -1,0 +1,21 @@
+$header-height: 7rem;
+
+@import 'header-base';
+
+.hamburger{
+  float: right;
+}
+
+.nav-bricks{
+
+  li a{
+    padding-top: $nav--main__toggler-height;
+  }
+
+  a:hover,
+  strong.active,
+  strong.trail {
+    border-top: $nav--main__toggler-border;
+    padding-top: 0;
+  }
+}
