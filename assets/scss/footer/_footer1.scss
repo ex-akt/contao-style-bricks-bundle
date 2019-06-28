@@ -1,0 +1,50 @@
+@import 'footer-base';
+
+.section-footer{
+
+  .widget {
+    position:relative;
+    font-size: 0.9rem;
+
+    & + .widget {
+      margin-top: 30px;
+    }
+  }
+
+  .widget label{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+  }
+
+  .focused.widget label {
+    transform: translateY(-125%);
+    font-size: .75em;
+  }
+
+
+  .widget input, .widget textarea {
+    position: relative;
+    padding: 12px 0px 5px 0;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 1px 0 0 $color-text--inverted;
+    transition: box-shadow 150ms ease-out;
+    background-color: transparent;
+    color: $color-text--inverted;
+    border-radius: 0;
+
+    &:focus {
+      box-shadow: 0 2px 0 0 scale_color($color-brand, $saturation: 30%);
+    }
+
+    &.filled{
+      box-shadow: 0 2px 0 0 $color-brand;
+    }
+  }
+
+}
