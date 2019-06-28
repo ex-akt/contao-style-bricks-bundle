@@ -51,7 +51,6 @@
 <?php $this->sections('before'); ?>
 
 <?php $this->block('container'); ?>
-<div class="layout__columns layout__columns--<?= $this->layout->cols ?>">
     <?php $this->block('main'); ?>
     <main id="main" class="section-main" itemscope itemtype="http://schema.org/WebPageElement" itemprop="mainContentOfPage">
         <div class="section-main__inside">
@@ -79,8 +78,6 @@
         </aside>
     <?php endif; ?>
     <?php $this->endblock(); ?>
-
-</div>
 <?php $this->endblock(); ?>
 
 <?php $this->sections('after'); ?>
