@@ -14,6 +14,12 @@ $breakpoint-menu: screen-sm;
 
 .logo{
   @extend %clearfix;
+
+  .symbol{
+    @include media-query($breakpoint-menu){
+      height: 14rem;
+    }
+  }
 }
 
 .nav-bricks{
