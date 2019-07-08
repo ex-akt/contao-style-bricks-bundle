@@ -1,5 +1,3 @@
-import '../scss/forms/_forms.scss'; 
-
 function brick_checkForFilledWidget(element){
     var value = element.value.trim();
     if(value == ""){
@@ -10,15 +8,6 @@ function brick_checkForFilledWidget(element){
         element.classList.add('filled');
         element.parentElement.classList.add('focused');
     }
-}
-
-function brick_getCoords(elem) {
-    let box = elem.getBoundingClientRect();
-
-    return {
-        top: box.top + pageYOffset,
-        left: box.left + pageXOffset
-    };
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -36,15 +25,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         widget.addEventListener("blur", function (event) {
             brick_checkForFilledWidget(this);
         });
-
-        //Error Handling (Scroll to form)
-        if(widget.classList.contains('error')){
-            let coords = brick_getCoords(widget)
-            if (coords.top > window.pageYOffset) {
-                window.scrollTo(0, coords.top - 120);
-            }
-            let errorExplanationWidget =  document.getElementsByClassName('error-message');
-            errorExplanationWidget.item(0).classList.remove('hidden');
-        }
+        
     }
 });
