@@ -9,7 +9,12 @@ Im Gegensatz zu klassischen Themes setzt das Style Bricks Bundle darauf, nur den
 benötigt wird. Die Auswahl (Styling) findet daher über das importieren der entsprechenden Styles in SCSS bzw über die 
 entsprechenden Javascript-Dateien in der app.js statt.
 
-## Instructions
+## Installation
+At the moment you need to npm install the dependencies in this package manually.
+```bash
+cd vendor/ex-akt/contao-style-bricks-bundle && npm install
+```
+In future version this should be done automatically during installation.
 
 ## What's inside?
 - Default Contao settings

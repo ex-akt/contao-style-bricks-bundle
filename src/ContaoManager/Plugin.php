@@ -1,12 +1,12 @@
 <?php
 
 /*
- * This file is part of the ContaoBricksHeaderBundle.
+ * This file is part of the ContaoStyleBricksBundle.
  *
  * (c) ex-akt <https://github.com/ex-akt>
  *
  * @package ContaoBricksHeaderBundle
- * @author Samuel Heer <https://github.com/samuel.heer>
+ * @author Samuel Heer <https://github.com/samuelheer>
  * @license LGPL-3.0-or-later
  * @copyright ex-akt 2019
  */
@@ -18,10 +18,8 @@ use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Config\ConfigPluginInterface;
-use Contao\ManagerPlugin\Dependency\DependentPluginInterface;
-use Symfony\Component\Config\Loader\LoaderInterface;
 use ExAkt\ContaoStyleBricksBundle\ContaoStyleBricksBundle;
-
+use Symfony\Component\Config\Loader\LoaderInterface;
 
 class Plugin implements BundlePluginInterface, ConfigPluginInterface
 {

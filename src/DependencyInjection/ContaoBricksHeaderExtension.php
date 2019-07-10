@@ -1,12 +1,12 @@
 <?php
 
 /*
- * This file is part of the ContaoBricksHeaderBundle.
+ * This file is part of the ContaoStyleBricksBundle.
  *
  * (c) ex-akt <https://github.com/ex-akt>
  *
  * @package ContaoBricksHeaderBundle
- * @author Samuel Heer <https://github.com/samuel.heer>
+ * @author Samuel Heer <https://github.com/samuelheer>
  * @license LGPL-3.0-or-later
  * @copyright ex-akt 2019
  */
@@ -18,7 +18,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class ContaoStyleBricksBundle extends Extension
+class ContaoBricksHeaderExtension extends Extension
 {
     /**
      * {@inheritdoc}
