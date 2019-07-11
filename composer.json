@@ -24,7 +24,8 @@
         "php-http/guzzle6-adapter": "^1.1",
         "php-http/message-factory": "^1.0.2",
         "phpunit/phpunit": "^5.7.26",
-        "symfony/phpunit-bridge": "^3.2"
+        "symfony/phpunit-bridge": "^3.2",
+        "erdmannfreunde/euf_nutshell": "0.4.*"
     },
     "extra": {
         "contao-manager-plugin": "ExAkt\\ContaoStyleBricksBundle\\ContaoManager\\Plugin"
