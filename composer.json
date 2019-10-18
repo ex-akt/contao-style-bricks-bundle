@@ -18,7 +18,7 @@
         "contao/manager-plugin": "<2.0 || >=3.0"
     },
     "require": {
-        "erdmannfreunde/euf_nutshell": "0.4.*"
+        "erdmannfreunde/euf_nutshell": "^1.0"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0",
