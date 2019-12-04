@@ -1,25 +1,25 @@
 .band{
 	@include wrapper-max(none);
-  
+
   	padding-top: 3rem;
   	padding-bottom: 3rem;
-  	background-color: $color-default;
-    color: $color-text--inverted;
+  	background-color: var(--color-default);
+    color: var(--color-text--inverted);
     a,h1,h2,h3,h4,h5,h6 {
-      color: $color-text--inverted; 
+      color: var(--color-text--inverted);
     }
 
 	.ce_text.last{
 		margin-bottom: 0;
 	}
-  	
+
   	//Different Colors
   	&.band--gray{
-  		background-color: $color-gray;	
+  		background-color: var(--color-gray);
   	}
 
   	&.band--gray-light{
-  		background-color: $color-gray-light;
+  		background-color: var(--color-gray-light);
   	}
 
   	//Different Sizes
@@ -37,7 +37,7 @@
   		height: 100vh;
   	}
 
- 
+
   	.inside{
   		@include wrapper-max;
   		@include padding-default;

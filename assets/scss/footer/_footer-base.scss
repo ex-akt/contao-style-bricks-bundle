@@ -1,8 +1,8 @@
 .section-footer{
-  background-color: $color-default;
-  color: $color-text--inverted;
+  background-color: var(--color-default);
+  color: var(--color-text--inverted);
 
   a{
-    color: $color-text--inverted;
+    color: var(--color-text--inverted);
   }
 }

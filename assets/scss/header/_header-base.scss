@@ -1,23 +1,24 @@
-$header-height: 7rem !default;
-$logo-height: $header-height !default;
-$logo-padding: $base-spacing-unit !default;
+$breakpoint-menu: screen-md !default;
 
-$nav--main__toggler-height: $base-border-width*5 !default;
-$nav--main__toggler-color: $color-default;
-$nav--main__toggler-border: $nav--main__toggler-height solid $nav--main__toggler-color;
+html{
+  --header-height: 7rem;
+  --logo-height: var(--header-height);
+  --logo-padding: var(--base-spacing-unit);
 
-$nav--main__color: $color-gray !default;
-$nav--main__color-hover: $color-default !default;
+  --nav--main__toggler-height: calc(var(--base-border-width)*5);
+  --nav--main__toggler-color: var(--color-default);
+  --nav--main__toggler-border: var(--nav--main__toggler-height) solid var(--nav--main__toggler-color);
+  --nav--main__color: var(--color-gray);
+  --nav--main__color-hover: var(--color-default);
 
-$hamburger-layer-color: $nav--main__color !default;
-$hamburger-label-color: $nav--main__color !default;
-
-$breakpoint-menu: screen-offcanvas !default;
+  --hamburger-layer-color: var(--nav--main__color);
+  --hamburger-label-color: var(--nav--main__color);
+}
 
 @import '../navigation/navigation';
 
 .section-header{
-  @extend %clearfix;
+  //@extend %clearfix;
 }
 
 .section-header__inside{
@@ -28,9 +29,9 @@ $breakpoint-menu: screen-offcanvas !default;
 .logo{
   .symbol{
     display: inline-block;
-    padding-top: $logo-padding;
-    padding-bottom: $logo-padding;
-    height: $logo-height;
+    padding-top: var(--logo-padding);
+    padding-bottom: var(--logo-padding);
+    height: var(--logo-height);
   }
 
   img{

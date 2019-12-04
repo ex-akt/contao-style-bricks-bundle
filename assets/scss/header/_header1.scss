@@ -1,4 +1,6 @@
-$header-height: 7rem;
+html{
+  --header-height: 7rem;
+}
 
 @import 'header-base';
 
@@ -9,13 +11,13 @@ $header-height: 7rem;
 .nav-bricks{
 
   li a{
-    padding-top: $nav--main__toggler-height;
+    padding-top: var(--nav--main__toggler-height);
   }
 
   a:hover,
   strong.active,
   strong.trail {
-    border-top: $nav--main__toggler-border;
+    border-top: var(--nav--main__toggler-border);
     padding-top: 0;
   }
 }

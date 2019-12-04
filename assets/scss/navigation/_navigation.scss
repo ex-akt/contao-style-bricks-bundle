@@ -9,7 +9,7 @@
   height: auto;
 
   ul {
-    @extend %clearfix;
+    //@extend %clearfix;
   }
 
   li {
@@ -23,15 +23,15 @@
   strong.trail {
     text-decoration: none;
     position: relative;
-    line-height: $header-height;
-    color: $nav--main__color;
+    line-height: var(--header-height);
+    color: var(--nav--main__color);
 
     display: block;
-    padding: 0 $nav--main__item-padding;
+    padding: 0 var(--nav--main__item-padding);
   }
 
   strong.active, a:hover{
-    color: $nav--main__color-hover;
+    color: var(--nav--main__color-hover);
     transition: color 0.3s ease;
     font-weight: normal;
   }

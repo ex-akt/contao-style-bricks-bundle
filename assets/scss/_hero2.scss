@@ -1,0 +1,42 @@
+.hero{
+  &--half-height{
+    height: 50vh;
+  }
+
+  //height: calc(100vh - 10rem);
+
+  &.first{
+    margin-top: 5rem;
+  }
+
+  &-text{
+    width: 100%;
+    padding: 2rem;
+
+    @include media-query(screen-sm){
+      width: 70%;
+      padding: 3rem;
+    }
+
+    top: 60%;
+    background-color: rgba($color-default,.4);
+  }
+
+  &-overlay{
+    position: relative;
+    @include wrapper-max();
+    padding-top: 5rem;
+
+    h1, h2, h3, p, a {
+      color: $color-text--inverted;
+    }
+    h1{
+      font-size: 6rem;
+    }
+    p{
+      font-size: 2rem;
+    }
+
+  }
+}
+
