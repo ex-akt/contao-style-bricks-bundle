@@ -3,7 +3,7 @@
 <?php $this->class .= ' band';
 ?>
 <?php $this->block('content'); ?>
-  <div class="inside">
+  <div class="inside row">
     <?php $this->parent(); ?>
   </div>
 <?php $this->endblock(); ?>
