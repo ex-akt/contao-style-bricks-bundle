@@ -16,8 +16,15 @@ html{
 
   a:hover,
   strong.active,
-  strong.trail {
+  strong.trail,
+  a.trail {
     border-top: var(--nav--main__toggler-border);
     padding-top: 0;
+  }
+
+  @include media-query($breakpoint-menu){
+    .level_2{
+      display: none;
+    }
   }
 }

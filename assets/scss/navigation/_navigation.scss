@@ -30,17 +30,21 @@
     padding: 0 var(--nav--main__item-padding);
   }
 
-  strong.active, a:hover{
+  strong.active, a:hover, a.trail{
     color: var(--nav--main__color-hover);
     transition: color 0.3s ease;
     font-weight: normal;
+  }
+
+  //Level 2 Handling on Small Screen
+  .submenu--invisible ul.level_2{
+    @include invisible;
   }
 }
 
 @include media-query($breakpoint-menu) {
   .nav-bricks{
     float: right;
-    //font-size: 1rem;
     width: auto;
 
     //Make everything visible
