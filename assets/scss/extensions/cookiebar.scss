@@ -1,0 +1,10 @@
+//Import cookiebar scss from codefrog/contao-cookiebar
+@import "../../vendor/codefog/contao-cookiebar/assets/src/cookiebar";
+
+.cookiebar{
+  background-color: var(--color-gray);
+}
+
+.cookiebar__button{
+  background-color: var(--color-btn);
+}
