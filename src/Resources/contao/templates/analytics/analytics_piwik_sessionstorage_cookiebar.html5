@@ -1,0 +1,21 @@
+<?php
+
+// DO NOT EDIT ANYTHING BELOW THIS LINE UNLESS YOU KNOW WHAT YOU ARE DOING!
+if (!BE_USER_LOGGED_IN && !$this->hasAuthenticatedBackendUser()): ?>
+
+<script>
+      var _paq = _paq || [];
+      _paq.push(['requireConsent']);
+      if(!!localStorage.getItem('COOKIEBAR_ANALYTICS')) _paq.push(['setConsentGiven']);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      function matomo(){
+          var u=sessionStorage.getItem('matomoURL');
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId',sessionStorage.getItem('matomoID')]);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      }
+</script>
+
+<?php endif; ?>
