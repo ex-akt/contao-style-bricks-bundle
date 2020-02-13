@@ -21,7 +21,8 @@
         "erdmannfreunde/euf_nutshell": "^1.0",
         "netzmacht/contao-font-awesome-inserttag": "^2.0",
         "erdmannfreunde/euf_grid": "^3.0",
-        "erdmannfreunde/euf_hero": "^2.0"
+        "erdmannfreunde/euf_hero": "^2.0",
+        "fortawesome/font-awesome": "^5.12"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0",
@@ -30,9 +31,7 @@
         "php-http/guzzle6-adapter": "^1.1",
         "php-http/message-factory": "^1.0.2",
         "phpunit/phpunit": "^5.7.26",
-        "symfony/phpunit-bridge": "^3.2",
-        "fortawesome/font-awesome": "^5.12"
-
+        "symfony/phpunit-bridge": "^3.2"
     },
     "extra": {
         "contao-manager-plugin": "ExAkt\\ContaoStyleBricksBundle\\ContaoManager\\Plugin"
