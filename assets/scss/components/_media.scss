@@ -1,0 +1,114 @@
+@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/media";
+
+figure
+{
+  a{
+    overflow: hidden;
+    display: block;
+  }
+
+  a img{
+    transition: 0.2s ease;
+  }
+
+  a:hover img{
+    transform: scale(1.05);
+  }
+}
+
+/*.image-link-animation{
+
+}*/
+
+.image--dark{
+  background: #000;
+  .image_container{ opacity: 0.45;  }
+}
+
+.image--colored{
+  background: var(--color-default);
+  .image_container{ opacity: 0.45;  }
+}
+
+.image--brand{
+  background: var(--color-brand);
+  .image_container{ opacity: 0.45;  }
+}
+
+
+/**
+Image Captions
+
+ */
+.ce_image .caption,
+.ce_hyperlink .caption,
+.ce_text .caption{
+  margin: 0.8rem 0;
+  transition: 0.2s ease
+}
+
+.image-caption--above-bottom,
+.image-caption--above-middle{
+  position: relative;
+
+  a:before{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+  .caption{
+    color: var(--color-text--inverted);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 30px;
+  }
+}
+
+.image-caption--above-bottom .caption{
+  bottom: 2.5%;
+}
+.image-caption--above-middle .caption{
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.image-caption--hover.image-caption--above-bottom,
+{
+  .caption{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  &:hover .caption{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.image-caption--hover.image-caption--above-middle,
+{
+  .caption{
+    opacity: 0;
+    transform: translateY(-35%);
+  }
+
+  &:hover .caption{
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
+
+.video_container video,
+.video_container audio{
+  width: 100%;
+  height: auto;
+}
+

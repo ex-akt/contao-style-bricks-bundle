@@ -6,7 +6,6 @@ contao:
         disableCron: true
         folderUrl: false
 
-        installPassword: "%install_password%"
         dateFormat: "d.m.Y"
         datimFormat: "d.m.Y H:i"
         timeZone: 'Europe/Berlin'

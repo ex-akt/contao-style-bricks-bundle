@@ -1,0 +1,12 @@
+@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/grid";
+
+.row.gutter-off{
+  margin-left: 0;
+  margin-right: 0;
+
+  & [class*=col-]{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}

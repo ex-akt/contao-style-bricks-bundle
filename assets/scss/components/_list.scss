@@ -1,0 +1,20 @@
+.list--unstyled, .list--icon{
+    ul, ol{
+      padding: 0;
+      list-style-type: none;
+    }
+}
+
+.list--icon{
+  li{
+    position: relative;
+    padding-left: calc(var(--base-spacing-unit)*1.5);
+
+    .fa:first-child{
+      position: absolute;
+      left: 0;
+      line-height: var(--base-line-height);
+    }
+  }
+}
+

@@ -1,0 +1,81 @@
+.mod_article.hero--full-width{
+  @include wrapper-max(none);
+  padding: 0;
+
+  .content_container{
+    @include wrapper-max;
+    @include padding-default;
+  }
+}
+
+.mod_article.hero--full-height{
+  height: 100vh;
+  padding: 0;
+
+  .inside,
+  .ce_hero,
+  figure{
+    height: 100%;
+  }
+
+  img, video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; //IE HACK for object-fit polyfill
+  }
+}
+
+.ce_hero{
+  position: relative;
+  margin: 0 calc(var(--base-spacing-unit)*-1);
+  margin-bottom: calc(var(--base-spacing-unit)*2);
+
+  .image_container{
+    img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+  }
+
+  .content_container{
+    position:absolute;
+    top: 10%;
+    margin: 0 var(--base-spacing-unit);
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .button_container{
+    margin-top: var(--base-spacing-unit);
+  }
+
+  //Vertical Alignment
+  &.hero--middle{
+    .content_container{
+      top: auto;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+
+  &.hero--bottom{
+    .content_container{
+      top: auto;
+      bottom: 10%;
+    }
+  }
+}
+
+.hero-chevron{
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 3rem;
+}

@@ -4,10 +4,39 @@
   	padding-top: 3rem;
   	padding-bottom: 3rem;
   	background-color: var(--color-default);
-    color: var(--color-text--inverted);
+
+	color: var(--color-text--inverted);
     a,h1,h2,h3,h4,h5,h6 {
       color: var(--color-text--inverted);
     }
+
+	a.btn--primary,
+	span.btn--primary,
+	button.btn--primary,
+	div.btn--primary>a,
+	div.btn--primary>button{
+		background-color: var(--color-page-background);
+		color: var(--color-btn);
+	}
+
+	a.btn--third,
+	span.btn--third,
+	button.btn--third,
+	div.btn--third>a,
+	div.btn--third>button{
+		&:hover{
+			color: var(--color-btn-text);
+		}
+	}
+
+	a.btn--link,
+	span.btn--link,
+	button.btn--link,
+	div.btn--link>a,
+	div.btn--link>button{
+		color: var(--color-btn-text);
+	}
+
 
 	.ce_text.last{
 		margin-bottom: 0;

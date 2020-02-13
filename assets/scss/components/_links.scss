@@ -1,0 +1,72 @@
+@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/links";
+
+html{
+  --button-secondary-bg:         var(--color-gray);
+  --button-secondary-bg-hover:   var(--color-gray-light);
+  --color-btn-secondary-text:    var(--color-text--inverted);
+
+  --button-third-bg:             var(--color-gray);
+  --button-third-bg-hover:       var(--color-gray);
+  --color-btn-third-text:        var(--color-gray);
+}
+
+/*@include media-query('screen-sm'){
+  .btn{
+    min-width: 10em;
+  }
+}*/
+
+a.btn--primary,
+span.btn--primary,
+button.btn--primary,
+div.btn--primary>a,
+div.btn--primary>button{
+  background: var(--button-bg);
+  color: var(--color-btn-text);
+
+  &:hover {
+    transform: translateY(-1px);
+    background: var(--button-bg-hover);
+  }
+}
+
+a.btn--secondary,
+span.btn--secondary,
+button.btn--secondary,
+div.btn--secondary>a,
+div.btn--secondary>button{
+  background: var(--button-secondary-bg);
+  color: var(--color-btn-secondary-text);
+
+  &:hover {
+    background: var(--button-secondary-bg-hover);
+  }
+}
+
+a.btn--third,
+span.btn--third,
+button.btn--third,
+div.btn--third>a,
+div.btn--third>button{
+  color: var(--color-btn-third-text);
+  border: 2px solid;
+
+  &:hover {
+    color: var(--color-btn);
+  }
+}
+
+a.btn--link,
+span.btn--link,
+button.btn--link,
+div.btn--link>a,
+div.btn--link>button{
+  color: var(--color-btn);
+  border: 2px solid;
+
+  &:hover {
+    color: var(--color-btn-third-text);
+  }
+}
+
+

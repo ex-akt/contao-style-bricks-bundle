@@ -1,0 +1,17 @@
+@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/type";
+
+.text--left{
+  text-align: left;
+}
+
+.text--center{
+  text-align: center;
+}
+
+.text--right{
+  text-align: right;
+}
+
+.text--invert{
+  color: var(--color-text--inverted);
+}
