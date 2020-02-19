@@ -22,10 +22,9 @@
 //Layout Defaults
 @import "../scss/header/header1";
 @import "../scss/footer/footer1";
-@import '../scss/navigation/navigation';
 
 //Components
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
+@import '../scss/navigation/navigation'; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
 @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/news";
 @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/events";
 @import "../scss/components/forms"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/forms";
