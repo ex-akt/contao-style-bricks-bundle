@@ -35,6 +35,21 @@ figure
   .image_container{ opacity: 0.45;  }
 }
 
+//Enlarge Images
+@include media-query(screen-lg) {
+  .image--enlarge-left,
+  .image--enlarge-right {
+    .image_container {
+      width: 150%;
+    }
+  }
+
+  .image--enlarge-left .image_container {
+    float: right;
+  }
+}
+
+
 
 /**
 Image Captions
@@ -102,6 +117,12 @@ Image Captions
   &:hover .caption{
     transform: translateY(-50%);
     opacity: 1;
+  }
+}
+
+.image-caption--hidden, .image-caption--none{
+  .caption{
+    display: none;
   }
 }
 

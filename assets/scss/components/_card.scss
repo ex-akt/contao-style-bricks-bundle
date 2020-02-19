@@ -1,0 +1,90 @@
+.card{
+  --card-border-radius: var(--base-border-radius);
+  --card-spacing-unit: var(--base-spacing-unit--sm);
+}
+
+.card{
+  border: 1px solid #e8ecf3;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: var(--card-spacing-unit);
+  border-radius: var(--card-border-radius);
+  transition: 0.2s ease;
+  text-align: center;
+  margin-bottom: 0;
+
+  //Set Spacings
+  &>*:first-child:not(figure){
+    margin-top: var(--base-spacing-unit--sm);
+  }
+
+  figure{
+    margin-bottom: var(--base-spacing-unit--xs);
+  }
+
+  //Button Handling
+  .btn{
+    width: 100%;
+    margin-bottom: 0;
+
+    &:hover{
+      transform: none;
+    }
+  }
+
+  &.card--btn-bottom,
+  &.card--btn-append {
+    &:after {
+      display: block;
+      content: "-";
+      font-family: var(--button-font-family);
+      font-weight: var(--button-font-weight);
+      line-height: var(--button-line-height);
+      padding: var(--button-spacing);
+      color: transparent;
+    }
+  }
+
+
+  &.card--btn-bottom{
+    p:last-child{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: var(--card-spacing-unit);
+      width: 100%;
+    }
+  }
+
+  &.card--btn-append{
+    p:last-child > .btn{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 0;
+    }
+  }
+
+  //Braucht ein umfassendes "div.card-content" im Text-Editor.
+  &.card-background{
+    padding: 0;
+
+    figure{
+      margin: 0;
+    }
+
+    .card-content{
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      padding: var(--card-spacing-unit);
+    }
+  }
+
+  &.card-hover:hover{
+    transform: translateY(-2px);
+  }
+}
+
+

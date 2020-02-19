@@ -1,12 +1,20 @@
 @import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/grid";
 
+.ce_rowStart{
+  padding-top: var(--base-spacing-unit--sm);
+  padding-bottom: var(--base-spacing-unit--sm);
+}
+
 .row.gutter-off{
   margin-left: 0;
   margin-right: 0;
 
-  & [class*=col-]{
+  --grid__gutter: 0;
+
+  & [class*=col-] .block{
     padding-left: 0;
     padding-right: 0;
+    margin: 0;
   }
 
 }

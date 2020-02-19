@@ -1,0 +1,10 @@
+.gslide-external, .gslide-inner-content{
+  @include wrapper-max;
+  height: 100%;
+}
+
+.gslide iframe{
+  width: 100%;
+  height: 95%;
+}
+

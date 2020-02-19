@@ -1,5 +1,3 @@
-import '../scss/forms/_forms.scss';
-
 function brick_getCoords(elem) {
     var box = elem.getBoundingClientRect();
 

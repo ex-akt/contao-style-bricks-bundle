@@ -4,7 +4,9 @@
 
   .content_container{
     @include wrapper-max;
+    //margin set via wrapper-max [1]
     @include padding-default;
+
   }
 }
 
@@ -38,10 +40,12 @@
     }
   }
 
-  .content_container{
+  //.block Statements necessary for more specific overwrite of [1]
+  &.block .content_container{
     position:absolute;
     top: 10%;
-    margin: 0 var(--base-spacing-unit);
+    margin-left: var(--base-spacing-unit);
+    margin-right: var(--base-spacing-unit);
     left: 0;
     right: 0;
     z-index: 1;

@@ -3,6 +3,7 @@
   "description": "dependencies for contao-style-bricks-bundle",
   "version": "0.0.1",
   "devDependencies": {
+    "glightbox": "^2.0.5",
     "hamburgers": "1.1.3"
   }
 }
