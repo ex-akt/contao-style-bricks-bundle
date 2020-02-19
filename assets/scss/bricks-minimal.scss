@@ -13,16 +13,16 @@
 // BASE
 @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/shared";
 @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/page";
-@import "../scss/base/type"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/type";
-@import "../scss/base/grid"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/grid";
+@import "base/type"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/type";
+@import "base/grid"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/grid";
 @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/layout";
 
 //Layout Defaults
-@import "../scss/header/header1";
-@import "../scss/footer/footer1";
+@import "header/header1";
+@import "footer/footer1";
 
 //Components
-@import '../scss/navigation/navigation'; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
-@import "../scss/components/forms"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/forms";
-@import "../scss/components/links"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/links";
-@import "../scss/components/media"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/media";
+@import 'navigation/navigation'; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
+@import "components/forms"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/forms";
+@import "components/links"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/links";
+@import "components/media"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/media";
