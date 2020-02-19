@@ -1,0 +1,12 @@
+@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/search";
+
+html {
+  --search-spacing-unit:      var(--base-spacing-unit--lg);
+}
+
+.search{
+  &>div {
+    margin-top: var(--search-spacing-unit);
+    margin-bottom: var(--search-spacing-unit);
+  }
+}
