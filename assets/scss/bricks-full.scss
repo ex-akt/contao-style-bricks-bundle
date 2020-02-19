@@ -1,48 +1,32 @@
-// Variables
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/variables";
-
-// Mixins
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/mixins/general";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/mixins/responsive";
-
-// GENERIC
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/normalize";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/contao-reset";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/generic/box-sizing";
-
-// BASE
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/shared";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/page";
-@import "base/type"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/type";
-@import "base/grid"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/grid";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/layout";
+@import "nutshell";
 
 //Layout Defaults
 @import "header/header1";
 @import "footer/footer1";
 
-//Components
+//Minimal Components
 @import 'navigation/navigation'; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/news";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/events";
-@import "components/forms"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/forms";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/accordion";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/downloads";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/tables";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/newsletter";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/faq";
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/comments";
-@import "components/search";// @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/search";
+@import "components/forms";
+@import "components/links";
+@import "components/media";
 
+//Components
+@import 'navigation/navigation';
+@import "components/news";
+@import "components/events";
+@import "components/accordion";
+@import "components/downloads";
+@import "components/tables";
+@import "components/newsletter";
+@import "components/faq";
+@import "components/comments";
+@import "components/search";
 @import "components/ajax";
 @import "components/band";
 @import "components/card";
 @import "components/ce_hero";
-@import "components/links"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/links";
 @import "components/list";
-@import "components/media"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/media";
-@import "components/slider"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/slider";
-
+@import "components/slider";
 
 //Extensions
 @import "extensions/fontawesome";
