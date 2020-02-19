@@ -16,6 +16,24 @@ html{
   }
 }*/
 
+.link-animation--zoom{
+  figure
+  {
+    a{
+      overflow: hidden;
+      display: block;
+    }
+
+    a img{
+      transition: 0.2s ease;
+    }
+
+    a:hover img{
+      transform: scale(1.05);
+    }
+  }
+}
+
 a.btn--primary,
 span.btn--primary,
 button.btn--primary,
