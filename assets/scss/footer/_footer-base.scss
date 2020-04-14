@@ -1,8 +1,14 @@
+html{
+  --color-footer-background: var(--color-default);
+  --color-footer-text: var(--color-text--inverted);
+  --color-footer-link: var(--color-footer-text);
+}
+
 .section-footer{
-  background-color: var(--color-default);
-  color: var(--color-text--inverted);
+  background-color: var(--color-footer-background);
+  color: var(--color-fotor-text);
 
   a{
-    color: var(--color-text--inverted);
+    color: var(--color-footer-link);
   }
 }

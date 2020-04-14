@@ -4,6 +4,30 @@
 if (!BE_USER_LOGGED_IN && !$this->hasAuthenticatedBackendUser()): ?>
 
 <script>
+        //Opt-Out Settings
+        document.addEventListener('DOMContentLoaded', function () {
+            var optOutBox = document.querySelector('[data-optout-analytics]');
+            // Power up the analytics box if exists
+            if (optOutBox) {
+                var analyticsKey = 'COOKIEBAR_ANALYTICS';
+
+                // Check the box if the box was checked
+                if (localStorage.getItem(analyticsKey)) {
+                    optOutBox.checked = true;
+                }
+
+                optOutBox.addEventListener('change', function (e) {
+                    e.preventDefault();
+
+                    if (this.checked) {
+                        localStorage.setItem(analyticsKey, 1);
+                    } else {
+                        localStorage.removeItem(analyticsKey);
+                    }
+                });
+            }
+        });
+
       var _paq = _paq || [];
       _paq.push(['requireConsent']);
       if(!!localStorage.getItem('COOKIEBAR_ANALYTICS')) _paq.push(['setConsentGiven']);

@@ -25,6 +25,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         widget.addEventListener("blur", function (event) {
             brick_checkForFilledWidget(this);
         });
-        
+
     }
 });

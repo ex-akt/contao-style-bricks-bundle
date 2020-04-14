@@ -1,1 +1,5 @@
 @import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/news";
+
+.news-grid{
+  grid-row-gap: var(--grid__gutter);
+}

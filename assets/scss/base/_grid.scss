@@ -16,5 +16,8 @@
     padding-right: 0;
     margin: 0;
   }
+}
 
+.row{
+  grid-row-gap: var(--grid__gutter);
 }

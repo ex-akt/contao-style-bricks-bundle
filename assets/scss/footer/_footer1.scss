@@ -25,14 +25,14 @@
       width: 100%;
       outline: 0;
       border: 0;
-      box-shadow: 0 1px 0 0 var(--color-text--inverted);
+      box-shadow: 0 1px 0 0 var(--color-footer-text);
       transition: box-shadow 150ms ease-out;
       background-color: transparent;
-      color: var(--color-text--inverted);
+      color: var(--color-footer-text);
       border-radius: 0;
 
       &:focus {
-        //box-shadow: 0 2px 0 0 scale_color(var(--color-brand), $saturation: 30%);
+        //box-shadow: 0 -1px 0 0 scale_color(var(--color-brand), $saturation: 30%);
       }
 
       &.filled{

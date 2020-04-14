@@ -15,7 +15,6 @@
     <?php $this->endblock(); ?>
 
     <?= $this->framework ?>
-    <link type="text/css" rel="stylesheet" href="<?= $this->asset('fonts.css') ?>">
     <link type="text/css" rel="stylesheet" href="<?= $this->asset('app.css') ?>">
     <?= $this->stylesheets ?>
     <?= $this->mooScripts ?>

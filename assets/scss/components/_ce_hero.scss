@@ -6,6 +6,7 @@
   .ce_hero,
   figure{
     height: 100%;
+    overflow: hidden;
   }
 
   img, video{
@@ -20,6 +21,10 @@
   position: relative;
   margin: 0 calc(var(--base-spacing-unit)*-1);
   margin-bottom: calc(var(--base-spacing-unit)*2);
+
+  &>.inside{
+    overflow: hidden;
+  }
 
   .image_container{
     img{

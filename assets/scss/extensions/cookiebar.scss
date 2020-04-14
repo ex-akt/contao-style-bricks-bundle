@@ -7,4 +7,9 @@
 
 .cookiebar__button{
   background-color: var(--color-btn);
+
+  &:hover{
+    background-color: var(--color-gray-light);
+  }
+
 }

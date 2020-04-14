@@ -9,7 +9,8 @@
 @import "../../../node_modules/hamburgers/_sass/hamburgers/base";
 
 .hamburger{
-  height: var(--header-height);
+  //height: var(--header-height);
+  padding: var(--logo-padding) 0;
 
 
   @include media-query($breakpoint-menu) {

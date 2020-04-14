@@ -13,6 +13,7 @@
 
 namespace ExAkt\ContaoStyleBricksBundle\ContaoManager;
 
+use Codefog\Cookiebar\CookiebarGenerator;
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
@@ -30,7 +31,7 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface
     {
         return [
             BundleConfig::create(ContaoStyleBricksBundle::class)
-                ->setLoadAfter([ContaoCoreBundle::class]),
+                ->setLoadAfter([ContaoCoreBundle::class,CookiebarGenerator::class]),
         ];
     }
 
