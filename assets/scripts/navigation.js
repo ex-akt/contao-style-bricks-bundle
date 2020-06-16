@@ -1,6 +1,7 @@
 var mainMenu = (function(){
 
     var boolSubMenusRegistered = false;
+    var mainMenuIndicator = 'nav-bricks';
 
     function toggleSubMenu(event){
         event.preventDefault();
@@ -20,7 +21,12 @@ var mainMenu = (function(){
 
     function toggleMainMenu(){
         var hamburgerIconClassList = document.getElementsByClassName("hamburger").item(0).classList;
-        var mainMenuClassList = document.getElementsByClassName("nav-bricks").item(0).classList;
+
+        if(document.getElementsByClassName("hamburger").item(0).getAttribute('data-menu-class') !== null)
+        {
+            mainMenuIndicator = document.getElementsByClassName("hamburger").item(0).getAttribute('data-menu-class')
+        }
+        var mainMenuClassList = document.getElementsByClassName(mainMenuIndicator).item(0).classList;
 
         if(hamburgerIconClassList.contains('is-active')){
             hamburgerIconClassList.remove('is-active');
@@ -34,7 +40,7 @@ var mainMenu = (function(){
             if(boolSubMenusRegistered === false){
                 boolSubMenusRegistered = true;
 
-                var subMenuLinks = document.querySelectorAll('.nav-bricks li.submenu');
+                var subMenuLinks = document.querySelectorAll('.'+mainMenuIndicator+' li.submenu');
                 for (var link of subMenuLinks) {
                     link.classList.add('submenu--invisible');
                     link.firstElementChild.removeEventListener('click',toggleMainMenu);
@@ -45,14 +51,14 @@ var mainMenu = (function(){
     }
 
     //Hamburger Button
-    document.getElementsByClassName('hamburger').item(0).addEventListener('click',toggleMainMenu);
+    var hamburgers = document.getElementsByClassName('hamburger');
+    for (var hamburger of hamburgers){
+        hamburger.addEventListener('click',toggleMainMenu);
+    }
 
     //Register click event for all links
-    var menuLinks = document.querySelectorAll('.nav-bricks a');
+    var menuLinks = document.querySelectorAll('.'+mainMenuIndicator+' a');
     for (var link of menuLinks) {
         link.addEventListener('click', toggleMainMenu);
     }
 })();
-
-
-
