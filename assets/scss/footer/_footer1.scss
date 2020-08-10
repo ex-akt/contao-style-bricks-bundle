@@ -40,6 +40,16 @@
       }
     }
 
+    &.widget-checkbox{
+      label{
+        position: relative
+      }
+
+      input{
+        width: auto;
+      }
+    }
+
     //Error Spezialfall, wenn Widget kein Value hat (nicht focused ist)
     &.error{
       p{
