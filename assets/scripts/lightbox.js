@@ -4,33 +4,45 @@ import 'glightbox/src/postcss/_glightbox.scss';
 
 var lightbox = (function(){
 
-    //TODO: ADD ELEMENTS IF THEY ARE LOADED EG VIA AJAX
-    function addElements(elements = []){
-        console.log(elements);
-    }
-
-    var lightboxes = {};
-    var elements = {};
-
-    var boxes = document.querySelectorAll("a[data-lightbox]");
-    boxes.forEach(function(element,key){
+    document.querySelectorAll("a[data-lightbox]").forEach(function(element,key){
 
         element.addEventListener("click", function(event){
             event.preventDefault();
+
+            let current = element,
+                gallery = [],
+                slides = document.querySelectorAll('[data-lightbox="' + current.dataset.lightbox + '"]'),
+                index = [].slice.call(slides).indexOf(current),
+                startAt = index > -1 ? index : 0;
+
+            for (let i = 0; i < slides.length; i++) {
+
+                let link = slides[i],
+                    element = {
+                        'href': link.href,
+                        'type': 'image'
+                    };
+
+                if (null !== link.closest('figure') && null !== link.closest('figure').querySelector('figcaption')) {
+                    element.description = link.closest('figure').querySelector('figcaption').innerHTML;
+                }
+
+                if ('undefined' !== typeof link.title && link.title !== '') {
+                    element.title = link.title;
+                }
+
+                gallery.push(element);
+            }
+
+            let myLightbox = GLightbox({'startAt': startAt});
+
+            myLightbox.setElements(gallery);
+            myLightbox.open();
         });
 
-        //GLightbox needs a class to set the event handler
-        element.classList.add('glightbox');
-
-        let lightboxId = element.getAttribute('data-lightbox');
-
-        //create element array for gallery
-        if(!(lightboxId in elements)){
-            elements[lightboxId] = [];
-        }
 
         //Determine Element Type
-        let type;
+        /*let type;
         if(element.parentElement.classList.contains('image_container')){
             type = 'image'
         }
@@ -40,24 +52,11 @@ var lightbox = (function(){
         else{
             type = 'external';
 
-        }
-
-        elements[lightboxId].push({
-            href: element.getAttribute('href'),
-            type: type
-        });
-
-        //Initialize Glightbox
-        lightboxes[lightboxId] = GLightbox({
-            loop: false,
-            closeOnOutsideClick: true
-        });
+        }*/
 
     });
 
-    for(var id in elements){
-        lightboxes[id].setElements(elements[id]);
-    }
+
 
 })();
 
