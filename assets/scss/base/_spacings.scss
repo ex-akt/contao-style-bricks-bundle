@@ -1,21 +1,26 @@
 .spacing--sm{
-  padding: var(--base-spacing-unit--sm) 0;
+  padding-top: var(--base-spacing-unit--sm);
+  padding-bottom: var(--base-spacing-unit--sm);
 }
 
 .spacing--xl{
-  padding: var(--base-spacing-unit--xl) 0;
+  padding-top: var(--base-spacing-unit--xl);
+  padding-bottom: var(--base-spacing-unit--xl);
 }
 
 .spacing--lg{
-  padding: var(--base-spacing-unit--lg) 0;
+  padding-top: var(--base-spacing-unit--lg);
+  padding-bottom: var(--base-spacing-unit--lg);
 }
 
 .spacing--xs{
-  padding: var(--base-spacing-unit--xs) 0;
+  padding-top: var(--base-spacing-unit--xs);
+  padding-bottom: var(--base-spacing-unit--xs);
 }
 
 .spacing{
-  padding: var(--base-spacing-unit) 0;
+  padding-top: var(--base-spacing-unit);
+  padding-bottom: var(--base-spacing-unit);
 }
 
 
