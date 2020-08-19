@@ -1,8 +1,15 @@
-$header-height: 2rem;
+html{
+  --header-height: 2rem;
+  --logo-height: 10rem;
+  --logo-padding: var(--base-spacing-unit--xl);
+
+  --nav--main__divider-color: var(--color-gray-light);
+}
+/*$header-height: 2rem;
 $logo-height: 10rem;
 $logo-padding: $base-spacing-unit*2;
 
-$nav--main__divider-color: $color-gray-light;
+$nav--main__divider-color: $color-gray-light;*/
 
 $breakpoint-menu: screen-sm;
 
@@ -13,7 +20,7 @@ $breakpoint-menu: screen-sm;
 }
 
 .logo{
-  @extend %clearfix;
+  //@extend %clearfix;
 
   .symbol{
     @include media-query($breakpoint-menu){
@@ -24,8 +31,8 @@ $breakpoint-menu: screen-sm;
 
 .nav-bricks{
   float: none;
-  border-top: 2px solid $nav--main__divider-color;
-  border-bottom: 2px solid $nav--main__divider-color;
+  border-top: 2px solid var(--nav--main__divider-color);
+  border-bottom: 2px solid var(--nav--main__divider-color);
 
   ul{
     display: inline-block; //center main menu
