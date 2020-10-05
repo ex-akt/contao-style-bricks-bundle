@@ -1,0 +1,66 @@
+@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
+
+.hamburger {
+  position: fixed;
+  right: var(--base-spacing-unit);
+  top: var(--base-spacing-unit);
+  z-index: 9999;
+
+  .hamburger-icon {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .bar {
+      height: 3px;
+      width: 40px;
+      display: block;
+      margin: 5px auto;
+      position: relative;
+      background-color: var(--color-text);
+      border-radius: 10px;
+      transition: .4s;
+    }
+
+    .menu.active, &.is-active .menu {
+      .bar {
+        &:nth-of-type(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+
+        &:nth-of-type(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+  .menu:hover{
+    .bar {
+      &:nth-of-type(1) {
+         width: 30px;
+      }
+
+      &:nth-of-type(3) {
+        width: 30px;
+       }
+    }
+  }
+  }
+
+.header--inverted{
+  .hamburger .bar{
+    background-color: var(--color-text--inverted);
+  }
+}
+

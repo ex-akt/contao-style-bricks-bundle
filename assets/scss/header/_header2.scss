@@ -1,0 +1,59 @@
+@import '../navigation/hamburger-v2';
+
+.section-header__inside{
+  position: relative;
+}
+
+ .nav-overlay-wrapper{
+    top: 0;
+    left: 0;
+    width: 100%;
+    //width: 0;
+    height: 100%;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    transition: 0.5s;
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+
+
+  &.invisible{
+    width: 0;
+  }
+
+  .table{
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    display: table;
+  }
+
+  .table-centered{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .nav-overlay{
+    a, strong{
+      line-height: 1.2em;
+      font-size: 2rem;
+      font-weight: 200;
+      color: var(--nav--main__color);
+      text-transform: uppercase;
+    }
+
+    strong.menu-heading{
+      font-weight: 800;
+    }
+
+    strong.active{
+      font-weight: 400;
+    }
+
+    li.menu-gap{
+      margin-top: var(--base-spacing-unit--lg);
+    }
+  }
+}

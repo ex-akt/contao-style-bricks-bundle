@@ -77,6 +77,11 @@
   }
 }
 
+.mod_article.hero--spacing{
+  padding-bottom: var(--base-spacing-unit--lg);
+  padding-top: var(--base-spacing-unit--lg);
+}
+
 .hero-chevron{
   position: absolute;
   bottom: 0;
