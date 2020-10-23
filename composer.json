@@ -21,8 +21,8 @@
         "erdmannfreunde/euf_grid": "^3.0",
         "erdmannfreunde/euf_hero": "^2.0",
         "fortawesome/font-awesome": "^5.12",
-        "oveleon/contao-cookiebar": "^2.2",
-        "oveleon/contao-component-style-manager": "^2.4"
+        "oveleon/contao-component-style-manager": "^2.4",
+        "oveleon/contao-cookiebar": "^2.2"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0",
