@@ -5,7 +5,13 @@
   padding-bottom: var(--base-spacing-unit--sm);
 }
 
-.row.gutter-off{
+.row{
+  grid-row-gap: var(--grid__gutter);
+}
+
+/* Remove -off in next major version, since it's not a module */
+.gutter-off,
+.gutter--off{
   margin-left: 0;
   margin-right: 0;
 
@@ -18,6 +24,9 @@
   }
 }
 
-.row{
-  grid-row-gap: var(--grid__gutter);
+.gutter--half{
+  --grid__gutter: var(--grid__gutter--half);
 }
+
+
+

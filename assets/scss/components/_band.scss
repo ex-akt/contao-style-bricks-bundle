@@ -54,8 +54,8 @@
   	//Different Sizes
 	//TODO band--spacing-lg etc..
   	&.band--thin{
-  		padding-top: 1rem;
-  		padding-bottom: 1rem;
+  		padding-top: var(--base-spacing-unit);
+  		padding-bottom: var(--base-spacing-unit);
   	}
 
   	&.band--fat{
