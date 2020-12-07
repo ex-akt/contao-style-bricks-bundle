@@ -20,7 +20,7 @@
 .ce_hero{
   position: relative;
   margin: 0 calc(var(--base-spacing-unit)*-1);
-  margin-bottom: calc(var(--base-spacing-unit)*2);
+  //margin-bottom: calc(var(--base-spacing-unit)*2);
 
   &>.inside{
     overflow: hidden;

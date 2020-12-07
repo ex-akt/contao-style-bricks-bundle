@@ -9,9 +9,3 @@
 @import "components/forms"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/forms";
 @import "components/links"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/links";
 @import "components/media"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/media";
-
-//Patch für following issue
-//https://github.com/ErdmannFreunde/euf_nutshell/issues/9#issue-568819577
-html{
-  --headings__color: 'currentColor';
-}
