@@ -6,6 +6,8 @@ html {
   --arrow-size:                2rem;
   --menu-point-color:          inherit;
   --menu-point-color--active:  var(--color-brand);
+  --arrow-prev:                "◄";
+  --arrow-next:                "►";
 }
 
 //
@@ -71,11 +73,11 @@ html {
     content: fa-content($fa-var-chevron-right);
   }*/
   .slider-prev:before {
-    content: "◄";
+    content: var(--arrow-prev);
   }
 
   .slider-next:before {
-    content: "►";
+    content: var(--arrow-next);
   }
 
   .slider-menu {
