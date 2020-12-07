@@ -20,8 +20,7 @@
         "netzmacht/contao-font-awesome-inserttag": "^2.0",
         "erdmannfreunde/euf_grid": "^3.0",
         "erdmannfreunde/euf_hero": "^2.0",
-        "fortawesome/font-awesome": "^5.12",
-        "codefog/contao-cookiebar": "^2.2"
+        "fortawesome/font-awesome": "^5.12"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0",
@@ -36,7 +35,8 @@
         "contao-manager-plugin": "ExAkt\\ContaoStyleBricksBundle\\ContaoManager\\Plugin"
     },
     "suggest": {
-        "inspiredminds/contao-wowjs": "^1.0"
+        "inspiredminds/contao-wowjs": "^1.0",
+        "oveleon/contao-cookiebar": "^1.7"
     },
     "autoload": {
         "psr-4": {
