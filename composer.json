@@ -14,12 +14,12 @@
         "contao/manager-plugin": "<2.0 || >=3.0"
     },
     "require": {
-        "contao/core-bundle": "^4.5",
+        "contao/core-bundle": "^4.9",
         "erdmannfreunde/euf_nutshell": "^1.0",
         "netzmacht/contao-font-awesome-inserttag": "^2.0",
-        "erdmannfreunde/euf_grid": "^3.0",
+        "erdmannfreunde/contao-grid-bundle": "^1.0",
         "erdmannfreunde/euf_hero": "^2.0",
-        "fortawesome/font-awesome": "^5.12"
+        "fortawesome/font-awesome": "^6.0"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0",
