@@ -9,6 +9,11 @@
   .image_container{ opacity: 0.45;  }
 }
 
+.image--darken {
+  background: #000;
+  .image_container{ opacity: 0.85;  }
+}
+
 .image--colored{
   background: var(--color-default);
   .image_container{ opacity: 0.45;  }

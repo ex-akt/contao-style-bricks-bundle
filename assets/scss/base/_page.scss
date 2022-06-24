@@ -7,3 +7,19 @@ html{
 body{
   overflow: hidden;
 }
+
+.block--small{
+  margin: 0 5%;
+  @include media-query(screen-md) {
+    margin: 0 15%;
+  }
+}
+
+.block--smaller{
+  margin: 0 15%;
+  @include media-query(screen-md){
+    margin: 0 25%;
+  }
+}
+
+

@@ -8,3 +8,8 @@
     display: none;
   }
 }
+
+.form--inline{
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
