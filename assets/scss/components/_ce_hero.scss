@@ -70,10 +70,8 @@
   padding: 0;
 
   .content_container{
-    @include wrapper-max;
-    //margin set via wrapper-max [1]
+    max-width: $wrapper-max;
     @include padding-default;
-
   }
 }
 
