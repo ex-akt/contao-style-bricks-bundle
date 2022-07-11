@@ -1,1 +1,14 @@
 @import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/tables";
+
+/* Tabellenränder */
+.table-border--solid{
+  --table-border-style:      solid;
+}
+.table-border--none{
+  --table-border-style:      none;
+}
+
+/* Tabellenausrichtung */
+.table-align--last-right .col_last{
+  text-align: right;
+}

@@ -13,6 +13,8 @@
 }
 
 .text--invert{
+  --headings__color: var(--color-text--inverted);
+
   color: var(--color-text--inverted);
 }
 
