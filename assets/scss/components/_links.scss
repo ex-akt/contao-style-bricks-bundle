@@ -10,12 +10,6 @@ html{
   --color-btn-third-text:        var(--color-gray);
 }
 
-/*@include media-query('screen-sm'){
-  .btn{
-    min-width: 10em;
-  }
-}*/
-
 .link-animation--zoom{
   figure
   {
@@ -43,7 +37,7 @@ div.btn--primary>button{
   color: var(--color-btn-text);
 
   &:hover {
-    transform: translateY(-1px);
+    //transform: translateY(-1px);
     background: var(--button-bg-hover);
   }
 }

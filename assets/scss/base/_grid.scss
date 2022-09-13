@@ -18,6 +18,35 @@
   }
 }
 
+/*
+  Vorgegebene Layouts durch CSS Grid
+ */
 .row{
   grid-row-gap: var(--grid__gutter);
+}
+.row-2c{
+  --grid__columns: 2;
+}
+
+.row-3c{
+  --grid__columns: 3;
+}
+
+.row-4c{
+  --grid__columns: 4;
+}
+
+/*
+ Elementausrichtung
+ */
+.align-items-center{
+  align-items: center;
+}
+
+.align-items-stretch{
+  align-items: stretch;
+}
+
+.align-items-baseline{
+  align-items: baseline;
 }
