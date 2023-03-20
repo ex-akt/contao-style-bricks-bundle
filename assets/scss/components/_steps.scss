@@ -1,0 +1,57 @@
+.steps{
+
+  ol, ul, .step-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    position: relative;
+
+    list-style: none;
+    counter-reset: step-counter;
+    flex-wrap: wrap;
+    @include media-query(screen-md){
+        flex-wrap: nowrap;
+    }
+  }
+
+  li, .step-item {
+    counter-increment: step-counter;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    padding: 0 var(--base-spacing-unit);
+
+    @include media-query(screen-md){
+      width: 100%;
+    }
+  }
+
+  li::before, .step-item::before {
+    content: counter(step-counter);
+    font-size: 3rem;
+    border-radius: 45px;
+    border: 5px solid white;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    display: block;
+    margin: var(--base-spacing-unit) auto;
+  }
+
+  li::after, .step-item::after {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    padding: 15px;
+    display: block;
+    content: "";
+    transform: rotate(-45deg) translate(0%, -50%);
+    left: -10px;
+    position: absolute;
+    top: 50%;
+  }
+
+  li.first::after, .step-item.first::after, .step-item:first-child::after{
+    display: none;
+  }
+}

@@ -20,7 +20,7 @@
 .ce_hero{
   position: relative;
   margin: 0 calc(var(--base-spacing-unit)*-1);
-  margin-bottom: calc(var(--base-spacing-unit)*2);
+  //margin-bottom: calc(var(--base-spacing-unit)*2);
 
   &>.inside{
     overflow: hidden;
@@ -37,8 +37,8 @@
   &.block .content_container{
     position:absolute;
     top: 10%;
-    margin-left: var(--base-spacing-unit);
-    margin-right: var(--base-spacing-unit);
+    margin-left: auto;
+    margin-right: auto;
     left: 0;
     right: 0;
     z-index: 1;
@@ -70,7 +70,9 @@
   padding: 0;
 
   .content_container{
-    @include wrapper-max;
+    width: $wrapper-max;
+    max-width: calc(100% - var(--base-spacing-unit));
+    //@include wrapper-max;
     //margin set via wrapper-max [1]
     @include padding-default;
 

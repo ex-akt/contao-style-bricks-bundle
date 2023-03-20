@@ -45,11 +45,19 @@
   	//Different Colors
   	&.band--gray{
   		background-color: var(--color-gray);
+		color: var(--color-gray-dark);
+		a,h1,h2,h3,h4,h5,h6 {
+			color: var(--color-gray-dark);
+		}
   	}
 
   	&.band--gray-light{
   		background-color: var(--color-gray-light);
   	}
+
+	&.band--brand{
+		background-color: var(--color-brand);
+	}
 
   	//Different Sizes
 	//TODO band--spacing-lg etc..
@@ -71,4 +79,9 @@
   		@include wrapper-max;
   		@include padding-default;
   	}
+}
+
+//Spezieller Einsatz von Band auf Basis von Content Elementen, färbt Hintergrund, z.B. als Infobox
+div[class*='ce_'].band{
+	padding: var(--base-spacing-unit);
 }

@@ -1,5 +1,4 @@
 contao:
-    prepend_locale: false
     localconfig:
         licenseAccepted: true
         enableSearch: false

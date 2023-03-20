@@ -1,0 +1,14 @@
+{# /templates/elements/ce_hyperlink.html.twig #}
+
+{% extends '@Contao/ce_hyperlink' %}
+
+{% if styleManager.get('button',['button-icon']) is defined  %}
+    {%  set appendIcon = styleManager.get('button',['button-icon-position']) == 'fa-pos-append' %}
+    {%  set icon = styleManager.prepare('button').format('<i class="%s"></i>') %}
+
+        {%  set link = appendIcon ? link ~ ' ' ~ icon : icon ~ ' ' ~ link %}
+{% endif %}
+
+
+
+

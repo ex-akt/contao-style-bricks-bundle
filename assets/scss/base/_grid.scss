@@ -5,15 +5,11 @@
   padding-bottom: var(--base-spacing-unit--sm);
 }
 
-.row{
-  grid-row-gap: var(--grid__gutter);
-}
-
-/* Remove -off in next major version, since it's not a module */
-.gutter-off,
-.gutter--off{
+.row.gutter-off,
+.row.gutter--off{
   margin-left: 0;
   margin-right: 0;
+
 
   --grid__gutter: 0;
 
@@ -24,9 +20,40 @@
   }
 }
 
-.gutter--half{
+/*
+  Vorgegebene Layouts durch CSS Grid
+ */
+.row{
+  grid-row-gap: var(--grid__gutter);
+}
+
+.gutter--half {
   --grid__gutter: var(--grid__gutter--half);
 }
 
+.row-2c{
+  --grid__columns: 2;
+}
 
+.row-3c{
+  --grid__columns: 3;
+}
 
+.row-4c{
+  --grid__columns: 4;
+}
+
+/*
+ Elementausrichtung
+ */
+.align-items-center{
+  align-items: center;
+}
+
+.align-items-stretch{
+  align-items: stretch;
+}
+
+.align-items-baseline{
+  align-items: baseline;
+}
