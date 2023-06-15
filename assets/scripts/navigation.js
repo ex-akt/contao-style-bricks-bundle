@@ -1,7 +1,12 @@
+function doNothingOnClick(e){
+    e.preventDefault();
+}
+
+
 var mainMenu = (function(){
 
     var boolSubMenusRegistered = false;
-    var mainMenuIndicator = 'nav-bricks';
+    var mainMenuIndicator = 'nav-bricks-main';
 
     function toggleSubMenu(event){
         event.preventDefault();
@@ -19,7 +24,8 @@ var mainMenu = (function(){
         }
     }
 
-    function toggleMainMenu(){
+    function toggleMainMenu(event){
+
         var hamburgerIconClassList = document.getElementsByClassName("hamburger").item(0).classList;
 
         if(document.getElementsByClassName("hamburger").item(0).getAttribute('data-menu-class') !== null)
@@ -30,11 +36,14 @@ var mainMenu = (function(){
 
         if(hamburgerIconClassList.contains('is-active')){
             hamburgerIconClassList.remove('is-active');
-            mainMenuClassList.add('invisible');
+            document.body.classList.remove('overlay-open')
+            //mainMenuClassList.add('invisible');
+
         }
         else{
             hamburgerIconClassList.add('is-active');
-            mainMenuClassList.remove('invisible');
+            document.body.classList.add('overlay-open')
+            //mainMenuClassList.remove('invisible');
 
             //Register Submenus Click Event
             if(boolSubMenusRegistered === false){
@@ -42,7 +51,7 @@ var mainMenu = (function(){
 
                 var subMenuLinks = document.querySelectorAll('.'+mainMenuIndicator+' li.submenu');
                 for (var link of subMenuLinks) {
-                    link.classList.add('submenu--invisible');
+                    //link.classList.add('submenu--invisible');
                     link.firstElementChild.removeEventListener('click',toggleMainMenu);
                     link.firstElementChild.addEventListener('click', toggleSubMenu);
                 }
@@ -53,12 +62,14 @@ var mainMenu = (function(){
     //Hamburger Button
     var hamburgers = document.getElementsByClassName('hamburger');
     for (var hamburger of hamburgers){
-        hamburger.addEventListener('click',toggleMainMenu);
+        hamburger.addEventListener('click', toggleMainMenu);
     }
 
     //Register click event for all links
-    var menuLinks = document.querySelectorAll('.'+mainMenuIndicator+' a');
+    var menuLinks = document.querySelectorAll('.'+mainMenuIndicator+' a.sibling');
     for (var link of menuLinks) {
-        link.addEventListener('click', toggleMainMenu);
+        //link.addEventListener('click', toggleMainMenu);
     }
+
+
 })();
