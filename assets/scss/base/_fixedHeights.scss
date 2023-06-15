@@ -1,0 +1,39 @@
+.vh-50{
+  height: 50vh;
+}
+.vh-75{
+  height: 75vh;
+}
+.vh-100{
+  height: 100vh;
+}
+
+@include media-query(screen-menu) {
+  .vh-50-screen {
+    height: 50vh;
+  }
+  .vh-75-screen {
+    height: 75vh;
+  }
+  .vh-100-screen {
+    height: 100vh;
+  }
+}
+
+.vh-50,.vh-75,.vh-100,
+.vh-50-screen,.vh-75-screen,.vh-100-screen{
+  padding: 0;
+  .inside,
+  .ce_hero,
+  figure{
+    height: 100%;
+    overflow: hidden;
+  }
+
+  img, video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; //IE HACK for object-fit polyfill
+  }
+}

@@ -1,0 +1,76 @@
+//TODO: TEXT on top of image
+
+.text-image, .text-image--mobile-below{
+  @include make-row-flexible();
+  h1,h2,h3,h4,h5,h6, .content_container, .image_container{
+    grid-column: span var(--grid__columns)/ span var(--grid__columns);
+  }
+
+  @include media-query(screen-sm) {
+    &.text-image--align-items-start{
+      align-items: start;
+    }
+    &.text-image--align-items-center{
+      align-items: center;
+    }
+    &.text-image--align-items-end{
+      align-items: end;
+    }
+
+    // float_above // float_below
+    .float_above, .content_container, .float_below{
+      grid-column: span var(--grid__columns);
+    }
+
+    // float_left //float_right
+    .float_left,
+    .float_left + .content_container,
+    .float_right,
+    .float_right + .content_container
+    {
+      grid-column: span calc(var(--grid__columns)/2) / span calc(var(--grid__columns)/2);
+    }
+
+    .float_right{
+      order: 1;
+    }
+
+    // 1/3 - 2/3 Aufteilung
+    &.text-image--onethird-twothird {
+      .float_left, .float_right + .content_container{
+        grid-column: 1 / span calc(var(--grid__columns)/3);
+      }
+      .float_left + .content_container, .float_right{
+        grid-column: calc(var(--grid__columns)/3 + 1) / -1;
+      }
+    }
+
+    // 2/3 - 1/3 Aufteilung
+    &.text-image--twothird-onethird {
+      .float_left, .float_right + .content_container{
+        grid-column: 1 / span calc(var(--grid__columns)/3*2);
+      }
+      .float_left + .content_container, .float_right{
+        grid-column: calc(var(--grid__columns)/3*2 + 1) / -1;
+      }
+    }
+
+  }
+}
+
+/**
+Anwendungsfall:
+Bei float_left oder float_right werden standardmäßig alle Bilder immer oberhalb des Textes dargestellt.
+Sollen Bilder "mobile" unterhalb des Textes dargestellt werden muss diese Klasse ausgewählt werden.
+ */
+.text-image--mobile-below{
+  .float_left, .float_right{
+    order: 1;
+  }
+
+  @include media-query(screen-sm) {
+    .float_left{
+      order: unset;
+    }
+  }
+}

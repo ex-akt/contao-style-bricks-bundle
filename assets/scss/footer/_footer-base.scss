@@ -12,3 +12,7 @@ html{
     color: var(--color-footer-link);
   }
 }
+
+.section-footer__inside{
+  @include wrapper-max;
+}

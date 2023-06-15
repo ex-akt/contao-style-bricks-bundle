@@ -1,0 +1,294 @@
+@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/navs";
+
+html{
+  --nav--main__color: var(--color-text);
+  --nav--main__color_background: var(--header-color-background);
+  --nav--main__indicator_color: var(--nav--main__color) ;
+  --nav--main__indicator_height: 3px;
+
+  --nav--main__color_background_overlay: rgba(0,0,0,0.95);
+  --nav--main__color_secondlevel_overlay: var(--color-text--inverted);
+
+  --nav--main__color_secondlevel_background: var(--nav--main__color_background);
+  --nav--main__color_secondlevel: var(--nav--main__color);
+
+  --hamburger-position--top: var(--base-spacing-unit);
+  --hamburger-position--right: var(--base-spacing-unit);
+}
+
+.nav-bricks-main{
+  @include navigation;
+  background: var(--nav--main__color_background);
+
+  position: fixed;
+  overflow-y: scroll;
+  inset: 0;
+
+  background: var(--nav--main__color_background_overlay);
+  z-index: 999;
+
+  padding-top: 10vh;
+  padding-left: var(--base-spacing-unit);
+  font-size: 2.2rem;
+  line-height: 1.8em;
+
+  width: 0;
+  height: 0;
+  top: -1000px;
+  left: -1000px;
+  opacity: 0;
+
+  transition: opacity 0.2s ease;
+
+  @include media-query(screen-menu) {
+    position: initial;
+    width: initial;
+    //height: auto;
+    height: auto!important; /* 1 Ebene spezifischer um "invisible" zu überschreiben */
+    background: initial;
+    overflow: initial;
+
+    padding: initial;
+    font-size: var(--base-font-size--xl);
+    line-height: var(--base-line-height);
+    opacity: 1;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    @include media-query(screen-menu) {
+      flex-direction: row;
+    }
+
+    a,
+    strong.active,
+    strong.trail,
+    strong.forward  {
+      display: block;
+      padding: calc(var(--nav--main__item-padding) / 2) var(--nav--main__item-padding);
+
+      color: var(--nav--main__color_secondlevel_overlay);
+      @include media-query(screen-menu) {
+        color: var(--nav--main__color);
+      }
+    }
+
+    //.submenu,
+    .submenu:hover{
+      &>.level_2{
+        max-height: 100%;
+      }
+    }
+
+    a:after{
+      display: block;
+      content: "";
+      width: 120%;
+      margin-left:-10%;
+      height: var(--nav--main__indicator_height);
+      background: transparent;
+    }
+
+    .submenu>strong:hover:after,
+    a:hover:after{
+      background: var(--nav--main__color);
+    }
+  }
+
+  .level_2{
+    @include media-query(screen-menu) {
+      position: absolute;
+      background-color: var(--nav--main__color_secondlevel_background);
+      padding: 0 var(--base-spacing-unit);
+      font-size: inherit;
+    }
+
+    z-index: 99;
+    flex-direction: column;
+
+    color: var(--nav--main__color_secondlevel_overlay);
+    overflow: hidden;
+    padding: 0 var(--base-spacing-unit) 0 2rem;
+
+    font-size: 1.75rem;
+
+    max-height: 0%;
+    transition: max-height 0.5s ease;
+
+    .last{
+      padding-bottom: var(--base-spacing-unit--sm);
+    }
+
+    a,
+    strong.active,
+    strong.trail,
+    strong.forward{
+      --nav--main__item-padding: var(--base-spacing-unit--sm);
+      color: var(--nav--main__color_secondlevel_overlay);
+      position: relative;
+
+      @include media-query(screen-menu) {
+        color: var(--nav--main__color_secondlevel);
+      }
+    }
+
+    a:hover:after{
+      position: absolute;
+      max-width: 90%;
+      margin: 0;
+    }
+  }
+
+  /*&.invisible{
+    width: 0;
+    height: 0;
+    top: -1000px;
+    left: -1000px;
+  }*/
+
+  &.menu-overlay--collapsed{
+    ul a, ul strong{
+      display: flex;
+      align-items: center;
+      @include media-query(screen-menu) {
+        display: block;
+      }
+
+      &:after{
+        display: none;
+        @include media-query(screen-menu) {
+         display: block;
+        }
+      }
+
+      &:before{
+        content:"";
+        margin-right: 1rem;
+
+        border: solid transparent;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transition: transform 0.5s ease;
+        @include media-query(screen-menu) {
+          display: none;
+        }
+      }
+
+      &.submenu:before{
+        border: solid black;
+        border-width: 0 3px 3px 0;
+      }
+    }
+
+    .submenu--active>a:before{
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    ul .submenu.submenu--invisible .level_2{
+      max-height: 0;
+      overflow: hidden;
+      display: none;
+    }
+
+
+  }
+}
+
+.hamburger {
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  grid-column-end: 12;
+
+  @include media-query(screen-menu) {
+    display: none;
+  }
+
+  .hamburger-menu-label{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+
+  .hamburger-icon {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .bar {
+    height: 3px;
+    width: 40px;
+    display: block;
+    margin: 5px auto;
+    position: relative;
+    background-color: var(--color-text);
+    border-radius: 10px;
+    transition: .4s;
+  }
+
+  .menu.active, &.is-active .menu {
+    .bar {
+      &:nth-of-type(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+
+      &:nth-of-type(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+  .menu:hover{
+    .bar {
+      &:nth-of-type(1) {
+        width: 30px;
+      }
+
+      &:nth-of-type(3) {
+        width: 30px;
+      }
+    }
+  }
+}
+
+.header--inverted{
+  .hamburger .bar{
+    background-color: var(--color-text--inverted);
+  }
+}
+
+body.overlay-open{
+  overflow-y: hidden;
+  height: 100vh;
+  padding-right: 15px;
+  position: fixed;
+
+  .hamburger-menu-label{
+    opacity: 0;
+  }
+
+  .nav-bricks-main{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+  }
+}
+

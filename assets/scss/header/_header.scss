@@ -1,0 +1,33 @@
+.section-header__inside{
+  @include wrapper-max;
+  @include padding-default;
+  @include make-row(12);
+
+  background-color: var(--header-color-background);
+  align-items: center;
+}
+
+.header--sticky,
+.header--sticky-mobile{
+  .section-header{
+    position: sticky;
+    top: -1px;
+    z-index: 99;
+  }
+}
+
+@include media-query(screen-menu) {
+  .header--sticky-mobile{
+    .section-header{
+      position: relative;
+    }
+  }
+
+  .header--sticky-desktop{
+    .section-header{
+      position: sticky;
+      top: 0;
+      z-index: 99;
+    }
+  }
+}

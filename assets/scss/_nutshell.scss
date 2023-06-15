@@ -2,7 +2,7 @@
 @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/variables";
 
 // Mixins
-@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/mixins/general";
+@import "mixins/general";
 @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/mixins/responsive";
 
 // GENERIC
@@ -16,4 +16,5 @@
 @import "base/type"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/type";
 @import "base/grid"; //@import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/grid";
 @import "../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/layout";
+@import "base/fixedHeights";
 @import "base/spacings";

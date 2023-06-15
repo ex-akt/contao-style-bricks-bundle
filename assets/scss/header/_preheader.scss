@@ -1,0 +1,64 @@
+html{
+  --color-preheader-background: var(--color-gray-light);
+  --color-preheader-text: var(--color-text);
+
+  --preheader-font-size--xs:  --base-font-size--xs;
+  --preheader-font-size:      14px;
+  --preheader-font-size--xl:  --base-font-size--xl;
+}
+
+.section-preheader{
+  background-color: var(--color-preheader-background);
+
+  color: var(--color-preheader-text);
+
+  #{headings()} {
+    display: none;
+  }
+
+  .row{
+    grid-row-gap: unset;
+  }
+
+  .block{
+    font-size: var(--preheader-font-size);
+    width: max-content;
+  }
+
+  a:hover{
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-image: linear-gradient(#064349, #064349);
+  }
+
+  li{
+    padding: 0 calc(var(--base-spacing-unit)/2);
+  }
+
+  .nav a, .nav strong.active, a{
+    color: var(--color-preheader-text);
+    font-weight: normal;
+    padding: calc(var(--base-spacing-unit--xs)/2) calc(var(--base-spacing-unit--xs)/2);
+  }
+}
+
+.section-preheader__inside{
+  @include wrapper-max;
+  @include padding-default;
+  @include make-row(1);
+}
+
+
+//StyleManager Property "PreHeader - Desktop - Anzahl Spalten [Layouts]"
+.preheader-row .section-preheader__inside{
+  @include make-row(1);
+}
+
+.preheader-row-2c .section-preheader__inside{
+  @include make-row(2);
+}
+
+.preheader-row-3c .section-preheader__inside{
+  @include make-row(3);
+}
