@@ -19,7 +19,8 @@
         "netzmacht/contao-font-awesome-inserttag": "^2.0",
         "erdmannfreunde/contao-grid-bundle": "^1.0",
         "erdmannfreunde/euf_hero": "^2.0",
-        "fortawesome/font-awesome": "^6.0"
+        "fortawesome/font-awesome": "^6.0",
+        "oveleon/contao-component-style-manager": "3.2.0"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0",
