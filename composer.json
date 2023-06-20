@@ -32,7 +32,7 @@
     },
     "suggest": {
         "inspiredminds/contao-wowjs": "^1.0",
-        "oveleon/contao-cookiebar": "^1.7",
+        "oveleon/contao-cookiebar": "^1.7"
     },
     "autoload": {
         "psr-4": {
