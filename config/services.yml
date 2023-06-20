@@ -1,0 +1,3 @@
+services:
+
+    ExAkt\ContaoStyleBricksBundle\EventListener\IncludeFontAwesomeListener: ~

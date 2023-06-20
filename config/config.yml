@@ -8,8 +8,3 @@ contao:
         dateFormat: "d.m.Y"
         datimFormat: "d.m.Y H:i"
         timeZone: 'Europe/Berlin'
-
-        # Adjust the upload image settings
-        maxFileSize: 20480000
-        imageWidth: 3000
-        imageHeight: 3000
