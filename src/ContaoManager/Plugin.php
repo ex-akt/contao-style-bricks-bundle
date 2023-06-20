@@ -13,26 +13,18 @@
 
 namespace ExAkt\ContaoStyleBricksBundle\ContaoManager;
 
-use Codefog\Cookiebar\CookiebarGenerator;
-use Contao\CoreBundle\ContaoCoreBundle;
-use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
-use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
-use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Config\ConfigPluginInterface;
-use ExAkt\ContaoStyleBricksBundle\ContaoStyleBricksBundle;
+use Contao\ManagerPlugin\Dependency\DependentPluginInterface;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
-class Plugin implements BundlePluginInterface, ConfigPluginInterface
+class Plugin implements DependentPluginInterface, ConfigPluginInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function getBundles(ParserInterface $parser)
+    public function getPackageDependencies()
     {
-        return [
-            BundleConfig::create(ContaoStyleBricksBundle::class)
-                ->setLoadAfter([ContaoCoreBundle::class,CookiebarGenerator::class]),
-        ];
+        return ['contao/core'];
     }
 
     /**

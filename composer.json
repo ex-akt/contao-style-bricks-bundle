@@ -33,7 +33,6 @@
     "suggest": {
         "inspiredminds/contao-wowjs": "^1.0",
         "oveleon/contao-cookiebar": "^1.7",
-        "oveleon/contao-component-style-manager": "^2.4"
     },
     "autoload": {
         "psr-4": {
