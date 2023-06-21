@@ -8,3 +8,7 @@ contao:
         dateFormat: "d.m.Y"
         datimFormat: "d.m.Y H:i"
         timeZone: 'Europe/Berlin'
+    
+    image:
+        valid_extensions: [ jpg, jpeg, gif, png, tif, tiff, bmp, svg, svgz, webp ]
+        imagine_service: 'contao.image.imagine.gd'
