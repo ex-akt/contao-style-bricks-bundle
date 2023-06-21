@@ -8,7 +8,11 @@ contao:
         dateFormat: "d.m.Y"
         datimFormat: "d.m.Y H:i"
         timeZone: 'Europe/Berlin'
-    
+
+        maxFileSize: 40960000
+        imageWidth: 4000
+        imageHeight: 4000
+
     image:
         valid_extensions: [ jpg, jpeg, gif, png, tif, tiff, bmp, svg, svgz, webp ]
         imagine_service: 'contao.image.imagine.gd'
