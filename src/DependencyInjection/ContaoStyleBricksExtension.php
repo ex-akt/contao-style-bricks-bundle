@@ -26,7 +26,6 @@ final class ContaoStyleBricksExtension extends Extension
 
     public function load(array $configs, ContainerBuilder $container): void
     {
-        $config = $this->processConfiguration(new Configuration(), $configs);
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
 
         $loader->load('services.yml');
