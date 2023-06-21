@@ -19,9 +19,7 @@
         "erdmannfreunde/contao-grid-bundle": "^1.0",
         "erdmannfreunde/euf_hero": "^2.0",
         "oveleon/contao-component-style-manager": "^3.2",
-        "inspiredminds/contao-glightbox": "^1.0",
-        "netzmacht/contao-font-awesome-inserttag": "^2.0",
-        "markocupic/contao-component-fontawesome-free": "^6.2"
+        "inspiredminds/contao-glightbox": "^1.0"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0",
