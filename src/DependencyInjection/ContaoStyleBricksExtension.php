@@ -3,17 +3,15 @@
 declare(strict_types=1);
 
 /*
- * This file is part of erdmannfreunde/contao-grid-bundle.
+ * This file is part of the ex-akt/contao-style-bricks-bundle.
  *
- * (c) Erdmann & Freunde <https://erdmann-freunde.de>
+ * (c) ex-akt <https://github.com/ex-akt>
  *
- * @license MIT
+ * @license LGPL-3.0-or-later
  */
 
-namespace ErdmannFreunde\ContaoGridBundle\DependencyInjection;
+namespace ExAkt\ContaoStyleBricksBundle\DependencyInjection;
 
-use ErdmannFreunde\ContaoGridBundle\EventListener\DataContainer\TranslatedLabelsListener;
-use ErdmannFreunde\ContaoGridBundle\GridClasses;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
@@ -23,7 +21,7 @@ final class ContaoStyleBricksExtension extends Extension
 {
     public function getAlias(): string
     {
-        return 'erdmannfreunde_contao_grid';
+        return 'ex-akt_contao_style_bricks';
     }
 
     public function load(array $configs, ContainerBuilder $container): void
@@ -32,6 +30,6 @@ final class ContaoStyleBricksExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
 
         $loader->load('services.yml');
-        
+
     }
 }
