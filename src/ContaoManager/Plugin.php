@@ -40,6 +40,6 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface
      */
     public function registerContainerConfiguration(LoaderInterface $loader, array $config)
     {
-        $loader->load('@ContaoStyleBricksBundle/Resources/config/config.yml');
+        $loader->load(__DIR__.'/../../config/config.yml');
     }
 }

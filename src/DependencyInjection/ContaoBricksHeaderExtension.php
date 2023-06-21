@@ -13,6 +13,7 @@
 
 namespace ExAkt\ContaoStyleBricksBundle\DependencyInjection;
 
+use Contao\ManagerBundle\DependencyInjection\Configuration;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -20,15 +21,15 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 class ContaoBricksHeaderExtension extends Extension
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function load(array $mergedConfig, ContainerBuilder $container)
+    public function getAlias(): string
     {
-        $loader = new YamlFileLoader(
-            $container,
-            new FileLocator(__DIR__.'/../Resources/config')
-        );
+        return 'exakt_contao_stylebricks';
+    }
+
+    public function load(array $configs, ContainerBuilder $container): void
+    {
+        $config = $this->processConfiguration(new Configuration(), $configs);
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
 
         $loader->load('services.yml');
     }

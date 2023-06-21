@@ -10,8 +10,18 @@
 
 namespace ExAkt\ContaoStyleBricksBundle;
 
+use ExAkt\ContaoStyleBricksBundle\DependencyInjection\ContaoStyleBricksExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class ContaoStyleBricksBundle extends Bundle
 {
+    public function getPath(): string
+    {
+        return \dirname(__DIR__);
+    }
+
+    public function getContainerExtension(): ContaoStyleBricksExtension
+    {
+        return new ContaoStyleBricksExtension();
+    }
 }
