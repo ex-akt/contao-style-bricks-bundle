@@ -18,7 +18,8 @@
         "erdmannfreunde/contao-grid-bundle": "^1.0",
         "erdmannfreunde/euf_hero": "^2.0",
         "oveleon/contao-component-style-manager": "^3.2",
-        "inspiredminds/contao-glightbox": "^1.0"
+        "inspiredminds/contao-glightbox": "^1.0",
+        "ex-akt/contao-vanilla-accordion-bundle": "^1.0" 
     },
     "require-dev": {
         "contao/manager-plugin": "^2.0",
