@@ -4,7 +4,7 @@ html{
   --color-footer-link: var(--color-footer-text);
 }
 
-.section-footer{
+.section-footer, footer{
   background-color: var(--color-footer-background);
   color: var(--color-footer-text);
 
@@ -13,6 +13,6 @@ html{
   }
 }
 
-.section-footer__inside{
+.section-footer__inside, footer>.inside{
   @include wrapper-max;
 }

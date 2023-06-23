@@ -1,4 +1,4 @@
-.section-header__inside{
+.section-header__inside, header>.inside{
   @include wrapper-max;
   @include padding-default;
   @include make-row(12);
