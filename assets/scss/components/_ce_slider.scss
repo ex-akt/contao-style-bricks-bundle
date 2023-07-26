@@ -77,6 +77,12 @@ html {
     content: var(--arrow-next);
   }
 
+  &.control-off {
+    .slider-control{
+      display: none;
+    }
+  }
+
   .slider-menu {
     font-size: 3rem;
     line-height: 1;

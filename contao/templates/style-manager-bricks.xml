@@ -167,6 +167,43 @@
       </child>
     </children>
   </archive>
+  <archive identifier="slider">
+    <field title="id">12</field>
+    <field title="tstamp">1690393063</field>
+    <field title="title">Slider-Einstellungen</field>
+    <field title="identifier">slider</field>
+    <field title="groupAlias">Komponenten</field>
+    <field title="sorting">512</field>
+    <field title="desc">NULL</field>
+    <children>
+      <child alias="navigation">
+        <field title="id">16</field>
+        <field title="pid">12</field>
+        <field title="sorting">128</field>
+        <field title="tstamp">1690393251</field>
+        <field title="alias">navigation</field>
+        <field title="title">Kontrollelemente</field>
+        <field title="description"></field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:7:"control";s:5:"value";s:21:"einblenden (Standard)";}i:1;a:2:{s:3:"key";s:12:"control--off";s:5:"value";s:10:"ausblenden";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen"></field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle"></field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement">1</field>
+        <field title="contentElements">a:1:{i:0;s:11:"sliderStart";}</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+        <field title="blankOption">1</field>
+      </child>
+    </children>
+  </archive>
   <archive identifier="spalteneinstellungenLayoutbereiche">
     <field title="title">Spalteneinstellungen</field>
     <field title="desc">NULL</field>
