@@ -77,7 +77,7 @@ html {
     content: var(--arrow-next);
   }
 
-  &.control-off {
+  &.control--off {
     .slider-control{
       display: none;
     }
