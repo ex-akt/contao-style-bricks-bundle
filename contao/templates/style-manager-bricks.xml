@@ -299,7 +299,7 @@
         <field title="alias">content-box-breite-desktop</field>
         <field title="title">Content-Box Breite Desktop</field>
         <field title="description"></field>
-        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:20:"content-md-width-100";s:5:"value";s:15:"100%";}i:1;a:2:{s:3:"key";s:19:"content-md-width-75";s:5:"value";s:3:"75%";}i:2;a:2:{s:3:"key";s:19:"content-md-width-50";s:5:"value";s:3:"50%";}i:3;a:2:{s:3:"key";s:19:"content-md-width-25";s:5:"value";s:3:"25%";}}</field>
+        <field title="cssClasses">a:4:{i:0;a:2:{s:3:"key";s:20:"content-md-width-100";s:5:"value";s:4:"100%";}i:1;a:2:{s:3:"key";s:19:"content-md-width-75";s:5:"value";s:3:"75%";}i:2;a:2:{s:3:"key";s:19:"content-md-width-50";s:5:"value";s:3:"50%";}i:3;a:2:{s:3:"key";s:19:"content-md-width-25";s:5:"value";s:3:"25%";}}</field>
         <field title="cssClass"></field>
         <field title="chosen"></field>
         <field title="passToTemplate"></field>
