@@ -42,6 +42,47 @@
     left: 0;
     right: 0;
     z-index: 1;
+    display: flex;
+  }
+
+  &.content--left .content_container{
+    justify-content: flex-start;
+  }
+  &.content--center .content_container{
+    justify-content: center;
+  }
+  &.content--right .content_container{
+    justify-content: flex-end;
+  }
+  &.content-width-75 .teaser{
+    width: 75%;
+  }
+  &.content-width-50 .teaser{
+    width: 50%;
+  }
+  &.content-width-25 .teaser{
+    width: 25%;
+  }
+  .teaser{
+    width: 100%;
+  }
+
+  @include media-query(screen-md) {
+    &.content-md-width-100 .teaser {
+      width: 100%;
+    }
+
+    &.content-md-width-75 .teaser {
+      width: 75%;
+    }
+
+    &.content-md-width-50 .teaser {
+      width: 50%;
+    }
+
+    &.content-md-width-25 .teaser {
+      width: 25%;
+    }
   }
 
   .button_container{
@@ -65,7 +106,7 @@
   }
 }
 
-.mod_article.hero--full-width{
+/*.mod_article.hero--full-width{
   @include wrapper-max(none);
   padding: 0;
 
@@ -77,13 +118,17 @@
     @include padding-default;
 
   }
-}
+}*/
 
+
+
+//TODO: Übernehme Standardspacings in Style-Auswahl Backend, dann kann das entfernt werden.
 .mod_article.hero--spacing{
   padding-bottom: var(--base-spacing-unit--lg);
   padding-top: var(--base-spacing-unit--lg);
 }
 
+//TODO: Implementiere Chevron als Auswahl in Contao Backend
 .hero-chevron{
   position: absolute;
   bottom: 0;
