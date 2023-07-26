@@ -324,6 +324,32 @@
         <field title="extendNews"></field>
         <field title="extendEvents"></field>
       </child>
+      <child alias="fullWidth">
+        <field title="id">14</field>
+        <field title="pid">7</field>
+        <field title="sorting">152</field>
+        <field title="tstamp">1690386950</field>
+        <field title="alias">fullWidth</field>
+        <field title="title">Artikelbreite</field>
+        <field title="description"></field>
+        <field title="cssClasses">a:2:{i:0;a:2:{s:3:"key";s:13:"article--full";s:5:"value";s:12:"Volle Breite";}i:1;a:2:{s:3:"key";s:30:"article--full content--limited";s:5:"value";s:31:"Volle Breite (Inhalt limitiert)";}}</field>
+        <field title="cssClass"></field>
+        <field title="chosen">0</field>
+        <field title="passToTemplate"></field>
+        <field title="extendLayout"></field>
+        <field title="extendPage"></field>
+        <field title="extendArticle">1</field>
+        <field title="extendForm"></field>
+        <field title="extendFormFields"></field>
+        <field title="formFields">NULL</field>
+        <field title="extendContentElement"></field>
+        <field title="contentElements">NULL</field>
+        <field title="extendModule"></field>
+        <field title="modules">NULL</field>
+        <field title="extendNews"></field>
+        <field title="extendEvents"></field>
+        <field title="blankOption">1</field>
+      </child>
     </children>
   </archive>
 </archives>

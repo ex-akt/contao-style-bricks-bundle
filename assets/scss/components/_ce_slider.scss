@@ -25,7 +25,7 @@ html {
 // [1] overrides default contao slider styling
 // [2] some fonts use different sizes for left and right arrow.
 //     We take Arial to make sure it has the same size.
-.ce_slider {
+.ce_slider, .ce_sliderStart {
   position: relative;
 
   .slider-control {

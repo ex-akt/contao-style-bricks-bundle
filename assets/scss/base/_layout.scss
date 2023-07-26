@@ -1,0 +1,13 @@
+@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/base/layout";
+
+.article--full{
+  padding: 0;
+
+  &.content--limited{
+    .content_container{
+      @include wrapper-max;
+      @include padding-default;
+    }
+  }
+}
+

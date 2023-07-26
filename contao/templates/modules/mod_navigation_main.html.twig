@@ -1,0 +1,28 @@
+<!-- indexer::stop -->
+<nav class="{{ class }} nav-bricks-main block"{{ cssID  }} {% if style %}style="{{ style }}"{% endif %}>
+
+    {% if headline %}
+    <{{ hl }}>{{ headline}} </{{ hl }}>
+    {% endif %}
+
+
+    <a href="{{ request }}#{{ skipId }}" class="invisible">{{ skipNavigation }}</a>
+
+    {{ items | raw }}
+
+    <span id="{{ skipId }}" class="invisible"></span>
+
+</nav>
+<div class="hamburger" data-menu-class="nav-bricks-main">
+    <a class="hamburger-menu-label" href="#">Menü</a>
+    <button class="hamburger-icon">
+        <div class="menu">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"> </div>
+        </div>
+    </button>
+</div>
+
+
+<!-- indexer::continue -->
