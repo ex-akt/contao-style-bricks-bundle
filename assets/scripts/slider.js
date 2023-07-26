@@ -1,6 +1,6 @@
 import '../../../../../assets/swipe/css/swipe.css';
 var Swipe = require('../../../../../assets/swipe/js/swipe');
-import '../scss/components/_slider.scss';
+import '../scss/components/ce_slider.scss';
 
 (function() {
     var e = document.querySelectorAll('.content-slider, .slider-control'), c, i;
