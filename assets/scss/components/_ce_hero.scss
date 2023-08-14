@@ -106,19 +106,15 @@
   }
 }
 
-/*.mod_article.hero--full-width{
-  @include wrapper-max(none);
-  padding: 0;
-
+.mod_article.hero--full-width{
   .content_container{
+    //@include wrapper-max;
     width: $wrapper-max;
     max-width: calc(100% - var(--base-spacing-unit));
-    //@include wrapper-max;
-    //margin set via wrapper-max [1]
     @include padding-default;
 
   }
-}*/
+}
 
 
 
