@@ -2,7 +2,7 @@
 
 // Add the swipe style sheet
 $GLOBALS['TL_CSS'][] = 'assets/swipe/css/swipe.min.css|static';
-$GLOBALS['TL_CSS'][] = 'public/bundles/contaostylebricksbundle/scss/slider.scss|static';
+$GLOBALS['TL_CSS'][] = 'public/bundles/contaostylebricks/scss/ce_slider.scss|static';
 
 ?>
 
