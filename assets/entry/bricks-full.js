@@ -2,8 +2,6 @@
 import '../scripts/polyfills';
 
 //Components
-import '../scripts/slider';
-import '../scripts/lightbox';
 import '../scripts/navigation';
 
 //Ajax
