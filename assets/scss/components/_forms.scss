@@ -25,6 +25,13 @@ html{
 }
 
 
+fieldset > legend{
+  font-weight: 700;
+  margin-bottom: var(--base-spacing-unit--sm);
+  font-size: 1.2em;
+}
+
+
 //Outline from browser show in main color
 input.text, input.captcha, textarea{
   &:focus-visible{
