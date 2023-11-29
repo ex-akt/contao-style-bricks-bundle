@@ -75,3 +75,12 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
+
+//Basic-Layout for extension "hofff/contao-calendarfield"
+//Show in one line
+.widget-calendar>div{
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: auto 1em;
+  gap: var(--grid__gutter--half);
+}
