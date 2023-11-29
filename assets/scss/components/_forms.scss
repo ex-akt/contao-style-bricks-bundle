@@ -6,11 +6,13 @@ html{
   
   --input-color-outline: var(--input-color-highlight);
   --input-color-checked: var(--input-color-highlight);
+
+  --input-color-error: #e65100
 }
 
 .error-message{
-  background-color: #e65100;
-  padding: 1rem;
+  background-color: var(--input-color-error);
+  padding: var(--base-spacing-unit);
 
   &.hidden{
     display: none;
