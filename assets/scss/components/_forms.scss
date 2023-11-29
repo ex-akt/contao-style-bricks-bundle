@@ -1,5 +1,13 @@
 @import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/forms";
 
+html{
+  //Generischer Color Highlight-Sammler
+  --input-color-highlight: var(--color-default);
+  
+  --input-color-outline: var(--input-color-highlight);
+  --input-color-checked: var(--input-color-highlight);
+}
+
 .error-message{
   background-color: #e65100;
   padding: 1rem;
@@ -12,4 +20,56 @@
 .form--inline{
   display: grid;
   grid-template-columns: 1fr min-content;
+}
+
+
+//Outline from browser show in main color
+input.text, input.captcha, textarea{
+  &:focus-visible{
+      outline: var(--input-border-width) solid var(--input-color-outline);
+  }
+}
+
+//Align radio and checkbox in standard gutter
+.radio_container > span, .checkbox_container > span {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 1em auto;
+  gap: var(--grid__gutter--half);
+}
+
+//Checkbox appearence
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0; /* Not removed via appearance */
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: var(--input-border-width) solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--input-color-checked);
+
+  background-color: CanvasText;
+
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
 }
