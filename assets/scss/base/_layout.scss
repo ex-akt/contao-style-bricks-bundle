@@ -8,7 +8,8 @@
     //.ce_hero content_container
     .content_container{
       @include wrapper-max;
-      @include padding-default;
+      padding-left: var(--base-spacing-unit);
+      padding-right: var(--base-spacing-unit);
     }
   }
 }
