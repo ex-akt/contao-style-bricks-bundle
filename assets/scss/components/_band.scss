@@ -43,12 +43,11 @@
 	}
 
   	//Different Colors
+	//Gray with white text
   	&.band--gray{
-  		background-color: var(--color-gray);
-		color: var(--color-gray-dark);
-		a,h1,h2,h3,h4,h5,h6 {
-			color: var(--color-gray-dark);
-		}
+		background-color: var(--color-gray);
+		color: var(--color-text--inverted);
+		--headings__color: var(--color-text--inverted);
   	}
 
   	&.band--gray-light{
