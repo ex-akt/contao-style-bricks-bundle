@@ -1,10 +1,10 @@
-@import "../../../../../erdmannfreunde/euf_nutshell/files/nutshell/scss/components/media";
+@import "../../../../../../assets/nutshell/scss/components/media";
 
 /*.image-link-animation{
 
 }*/
 
-.image--dark{
+.image--dark {
   background: #000;
   .image_container{ opacity: 0.45;  }
 }
@@ -14,12 +14,12 @@
   .image_container{ opacity: 0.85;  }
 }
 
-.image--colored{
+.image--colored {
   background: var(--color-default);
   .image_container{ opacity: 0.45;  }
 }
 
-.image--brand{
+.image--brand {
   background: var(--color-brand);
   .image_container{ opacity: 0.45;  }
 }
@@ -83,40 +83,39 @@ Image Captions
   transform: translateY(-50%);
 }
 
-.image-caption--hover.image-caption--above-bottom,
+.image-caption--hover.image-caption--above-bottom
 {
-  .caption{
+  .caption {
     opacity: 0;
     transform: translateY(15px);
   }
 
-  &:hover .caption{
+  &:hover .caption {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-.image-caption--hover.image-caption--above-middle,
-{
-  .caption{
+.image-caption--hover.image-caption--above-middle {
+  .caption {
     opacity: 0;
     transform: translateY(-35%);
   }
 
-  &:hover .caption{
+  &:hover .caption {
     transform: translateY(-50%);
     opacity: 1;
   }
 }
 
-.image-caption--hidden, .image-caption--none{
-  .caption{
+.image-caption--hidden, .image-caption--none {
+  .caption {
     display: none;
   }
 }
 
 .video_container video,
-.video_container audio{
+.video_container audio {
   width: 100%;
   height: auto;
 }
