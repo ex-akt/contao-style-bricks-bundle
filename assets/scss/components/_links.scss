@@ -28,20 +28,6 @@ html{
   }
 }
 
-a.btn--primary,
-span.btn--primary,
-button.btn--primary,
-div.btn--primary>a,
-div.btn--primary>button{
-  background: var(--button-bg);
-  color: var(--color-btn-text);
-
-  &:hover {
-    //transform: translateY(-1px);
-    background: var(--button-bg-hover);
-  }
-}
-
 a.btn--secondary,
 span.btn--secondary,
 button.btn--secondary,
@@ -64,7 +50,7 @@ div.btn--third>button{
   border: 2px solid;
 
   &:hover {
-    color: var(--color-btn);
+    color: var(--button-color);
   }
 }
 
