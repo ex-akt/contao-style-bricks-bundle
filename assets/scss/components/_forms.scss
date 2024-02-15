@@ -3,7 +3,7 @@
 html{
   //Generischer Color Highlight-Sammler
   --input-color-highlight: var(--color-default);
-  
+
   --input-color-outline: var(--input-color-highlight);
   --input-color-checked: var(--input-color-highlight);
 
@@ -24,18 +24,18 @@ html{
   grid-template-columns: 1fr min-content;
 }
 
-
-fieldset > legend{
+//Needs to be set in project!
+/*fieldset > legend{
   font-weight: 700;
   margin-bottom: var(--base-spacing-unit--sm);
   font-size: 1.2em;
-}
+}*/
 
 
 //Outline from browser show in main color
 input.text, input.captcha, textarea{
   &:focus-visible{
-      outline: var(--input-border-width) solid var(--input-color-outline);
+      outline: var(--forms-input-border-width) solid var(--forms-input-border-color);
   }
 }
 
@@ -44,7 +44,7 @@ input.text, input.captcha, textarea{
   display: grid;
   align-items: baseline;
   grid-template-columns: 1em auto;
-  gap: var(--grid__gutter--half);
+  gap: var(--grid-gutter-half);
 }
 
 //Checkbox appearence
@@ -57,8 +57,8 @@ input[type="checkbox"] {
   color: currentColor;
   width: 1.15em;
   height: 1.15em;
-  border: var(--input-border-width) solid var(--input-border-color);
-  border-radius: var(--input-border-radius);
+  border: var(--forms-input-border-width) solid var(--forms-input-border-color);
+  border-radius: var(--forms-input-border-radius);
   transform: translateY(-0.075em);
 
   display: grid;
