@@ -9,7 +9,7 @@
 
 .header--sticky,
 .header--sticky-mobile{
-  .section-header{
+  .section-header, header{
     position: sticky;
     top: -1px;
     z-index: 99;
@@ -17,14 +17,14 @@
 }
 
 @include media-query(screen-menu) {
-  .header--sticky-mobile{
+  .header--sticky-mobile, header{
     .section-header{
       position: relative;
     }
   }
 
   .header--sticky-desktop{
-    .section-header{
+    .section-header, header{
       position: sticky;
       top: 0;
       z-index: 99;
