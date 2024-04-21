@@ -1,6 +1,6 @@
 <?php if ($this->content): ?>
-<section id="<?= StringUtil::standardize($this->id, true) ?>" class="section-<?= StringUtil::standardize($this->id, true) ?>">
-    <div class="inside section-<?= StringUtil::standardize($this->id, true) ?>__inside">
+<section id="<?= Contao\StringUtil::standardize($this->id, true) ?>" class="section-<?= Contao\StringUtil::standardize($this->id, true) ?>">
+    <div class="inside section-<?= Contao\StringUtil::standardize($this->id, true) ?>__inside">
         <?= $this->content ?>
     </div>
 </section>
