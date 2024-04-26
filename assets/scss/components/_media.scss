@@ -44,9 +44,9 @@
 Image Captions
 
  */
-.ce_image .caption,
-.ce_hyperlink .caption,
-.ce_text .caption{
+.ce_image figcaption,
+.ce_hyperlink figcaption,
+.ce_text figcaption{
   margin: 0.8rem 0;
   transition: 0.2s ease
 }
@@ -66,7 +66,7 @@ Image Captions
     position: absolute;
   }
 
-  .caption{
+  figcaption{
     color: var(--color-text--inverted);
     position: absolute;
     left: 0;
@@ -75,41 +75,46 @@ Image Captions
   }
 }
 
-.image-caption--above-bottom .caption{
-  bottom: 2.5%;
+.image-caption--above-bottom {
+  figcaption{
+    bottom: 2.5%;
+  }
 }
-.image-caption--above-middle .caption{
-  top: 45%;
-  transform: translateY(-50%);
+
+.image-caption--above-middle {
+  figcaption{
+    top: 45%;
+    transform: translateY(-50%);
+  }
 }
 
 .image-caption--hover.image-caption--above-bottom
 {
-  .caption {
+  figcaption {
     opacity: 0;
     transform: translateY(15px);
   }
 
-  &:hover .caption {
+  &:hover figcaption {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
 .image-caption--hover.image-caption--above-middle {
-  .caption {
+  figcaption {
     opacity: 0;
     transform: translateY(-35%);
   }
 
-  &:hover .caption {
+  &:hover figcaption {
     transform: translateY(-50%);
     opacity: 1;
   }
 }
 
 .image-caption--hidden, .image-caption--none {
-  .caption {
+  figcaption {
     display: none;
   }
 }
