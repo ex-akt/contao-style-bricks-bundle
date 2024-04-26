@@ -12,6 +12,17 @@
     }
 }
 
+.article--full{
+    &.content--limited{
+    
+        .hero__content, .content_container {
+          @include wrapper-max;
+          padding-left: var(--base-spacing-unit);
+          padding-right: var(--base-spacing-unit);
+        }
+      }
+}
+
 .content-hero, .ce_hero{
     position: relative;
 

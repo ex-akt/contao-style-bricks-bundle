@@ -11,7 +11,7 @@
   margin-right: 0;
 
 
-  --grid__gutter: 0;
+  --grid-gutter: 0;
 
   & [class*=col-] .block{
     padding-left: 0;
@@ -24,23 +24,23 @@
   Vorgegebene Layouts durch CSS Grid
  */
 .row{
-  grid-row-gap: var(--grid__gutter);
+  grid-row-gap: var(--grid-gutter);
 }
 
 .gutter--half {
-  --grid__gutter: var(--grid__gutter--half);
+  --grid__gutter: var(--grid-gutter-half);
 }
 
 .row-2c{
-  --grid__columns: 2;
+  --grid-columns: 2;
 }
 
 .row-3c{
-  --grid__columns: 3;
+  --grid-columns: 3;
 }
 
 .row-4c{
-  --grid__columns: 4;
+  --grid-columns: 4;
 }
 
 /*

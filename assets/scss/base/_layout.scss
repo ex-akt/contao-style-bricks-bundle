@@ -1,16 +1,2 @@
 @import "../../../../../../assets/nutshell/scss/base/layout";
 
-.article--full{
-  padding: 0;
-
-  &.content--limited{
-    
-    //.ce_hero content_container
-    .content_container{
-      @include wrapper-max;
-      padding-left: var(--base-spacing-unit);
-      padding-right: var(--base-spacing-unit);
-    }
-  }
-}
-
