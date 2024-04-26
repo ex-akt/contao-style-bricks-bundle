@@ -1,0 +1,109 @@
+.mod_article.vh-100{
+    .inside{
+        height: 100%;
+        overflow: hidden;
+    }
+
+    img, video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        font-family: 'object-fit: cover;'; //IE HACK for object-fit polyfill
+    }
+}
+
+.content-hero, .ce_hero{
+    position: relative;
+
+    &>.inside{
+        overflow: hidden;
+      }
+
+    .hero__background{
+       img{
+            width: 100%;
+            vertical-align: bottom;
+       } 
+    }
+
+    //.block Statements necessary for more specific overwrite of [1]
+    //&.block .content_container{
+    .hero__content{
+        position:absolute;
+        top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    &.content--left .content_container{
+        justify-content: flex-start;
+    }
+    
+    &.content--center .content_container{
+        justify-content: center;
+    }
+    
+    &.content--right .content_container{
+        justify-content: flex-end;
+    }
+
+    &.content-width-75 .teaser{
+        width: 75%;
+    }
+    
+    &.content-width-50 .teaser{
+        width: 50%;
+    }
+    
+    &.content-width-25 .teaser{
+        width: 25%;
+    }
+    
+    .teaser{
+        width: 100%;
+    }
+
+    @include media-query(screen-md) {
+        &.content-md-width-100 .teaser {
+          width: 100%;
+        }
+    
+        &.content-md-width-75 .teaser {
+          width: 75%;
+        }
+    
+        &.content-md-width-50 .teaser {
+          width: 50%;
+        }
+    
+        &.content-md-width-25 .teaser {
+          width: 25%;
+        }
+    }
+
+    .button_container{
+        margin-top: var(--base-spacing-unit);
+    }
+
+      //Vertical Alignment
+    &.hero--middle{
+        .content_container{
+            top: auto;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+    }
+
+    &.hero--bottom{
+        .content_container{
+            top: auto;
+            bottom: 10%;
+        }
+    }
+}
+
