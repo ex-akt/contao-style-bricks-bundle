@@ -18,7 +18,7 @@ html{
 
 .nav-bricks-main{
   @include navigation;
-  background: var(--nav--main__color_background);
+  //background: var(--nav--main__color_background);
 
   position: fixed;
   overflow-y: scroll;
@@ -67,7 +67,7 @@ html{
     strong.trail,
     strong.forward  {
       display: block;
-      padding: calc(var(--nav--main__item-padding) / 2) var(--nav--main__item-padding);
+      padding: calc(var(--nav-item-padding) / 2) var(--nav-item-padding);
 
       color: var(--nav--main__color_secondlevel_overlay);
       @include media-query(screen-menu) {
@@ -291,4 +291,3 @@ body.overlay-open{
     opacity: 1;
   }
 }
-
