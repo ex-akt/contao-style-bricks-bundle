@@ -1,18 +1,19 @@
 html{
-  --color-footer-background: var(--color-default);
-  --color-footer-text: var(--color-text--inverted);
-  --color-footer-link: var(--color-footer-text);
+  --layout-footer-background: var(--color-default);
+  --layout-footer-color: var(--color-text-inverted);
+  --layout-footer-link-color: var(--layout-footer-color);
+
 }
 
-.section-footer, footer{
-  background-color: var(--color-footer-background);
-  color: var(--color-footer-text);
+footer{
+  background-color: var(--layout-footer-background);
+  color: var(--layout-footer-color);
 
   a{
-    color: var(--color-footer-link);
+    color: var(--layout-footer-link-color);
   }
 }
 
-.section-footer__inside, footer>.inside{
+footer>.inside{
   @include wrapper-max;
 }
