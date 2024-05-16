@@ -547,7 +547,7 @@
         <field title="alias">abstande-oben-unten</field>
         <field title="title">Abstände oben/unten</field>
         <field title="description">base/_spacings.scss</field>
-        <field title="cssClasses">a:5:{i:0;a:2:{s:3:"key";s:7:"spacing";s:5:"value";s:13:"Normalabstand";}i:1;a:2:{s:3:"key";s:11:"spacing--xs";s:5:"value";s:17:"Minimaler Abstand";}i:2;a:2:{s:3:"key";s:11:"spacing--sm";s:5:"value";s:15:"Kleiner Abstand";}i:3;a:2:{s:3:"key";s:11:"spacing--lg";s:5:"value";s:15:"Großer Abstand";}i:4;a:2:{s:3:"key";s:11:"spacing--xl";s:5:"value";s:17:"Maximaler Abstand";}}</field>
+        <field title="cssClasses">a:6:{i:0;a:2:{s:3:"key";s:7:"spacing";s:5:"value";s:13:"Normalabstand";}i:1;a:2:{s:3:"key";s:11:"spacing--xs";s:5:"value";s:17:"Minimaler Abstand";}i:2;a:2:{s:3:"key";s:11:"spacing--sm";s:5:"value";s:15:"Kleiner Abstand";}i:3;a:2:{s:3:"key";s:11:"spacing--lg";s:5:"value";s:15:"Großer Abstand";}i:4;a:2:{s:3:"key";s:11:"spacing--xl";s:5:"value";s:17:"Maximaler Abstand";}i:5;a:2:{s:3:"key";s:12:"spacing--off";s:5:"value";s:12:"Kein Abstand";}}</field>
         <field title="cssClass"></field>
         <field title="chosen"></field>
         <field title="blankOption">1</field>
