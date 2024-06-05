@@ -31,7 +31,7 @@
       }
 
     .hero__background{
-       img{
+       img, video{
             width: 100%;
             vertical-align: bottom;
        } 
@@ -41,42 +41,60 @@
     //&.block .content_container{
     .hero__content{
         position:absolute;
-        top: 10%;
+        //top: 10%;
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
         z-index: 1;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        height: 100%;
+
+        &:has(>.float_above),
+        &:has(>.float_below){
+            flex-direction: column;
+        }
     }
 
     &.content--left .hero__content{
-        justify-content: flex-start;
+        align-items: flex-start;
     }
     
     &.content--center .hero__content{
-        justify-content: center;
+        align-items: center;
     }
     
     &.content--right .hero__content{
-        justify-content: flex-end;
+        align-items: flex-end;
     }
 
-    &.content-width-75 .hero__text{
-        width: 75%;
+    &.content-width-75 { 
+        .hero__text,
+        .hero__image{
+            width: 75%;
+        }
     }
     
-    &.content-width-50 .hero__text{
-        width: 50%;
+    &.content-width-50 { 
+        .hero__text,
+        .hero__image{
+            width: 50%;
+        }
     }
     
-    &.content-width-25 .hero__text{
-        width: 25%;
+    &.content-width-25 { 
+        .hero__text,
+        .hero__image{
+            width: 25%;
+        }
     }
     
     .hero__text{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-evenly;
     }
 
     @include media-query(screen-md) {
@@ -103,17 +121,14 @@
 
       //Vertical Alignment
     &.hero--middle{
-        .content_container{
-            top: auto;
-            bottom: 50%;
-            transform: translateY(50%);
+        .hero__content{
+            justify-content: center;
         }
     }
 
     &.hero--bottom{
-        .content_container{
-            top: auto;
-            bottom: 10%;
+        .hero__content{
+            justify-content: flex-end;
         }
     }
 }
