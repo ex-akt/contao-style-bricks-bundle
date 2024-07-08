@@ -51,7 +51,7 @@
     top: 50%;
   }
 
-  li.first::after, .step-item.first::after, .step-item:first-child::after{
+  li:first-child::after, .step-item:first-child::after, .step-item:first-child::after{
     display: none;
   }
 }
