@@ -1,6 +1,6 @@
 .card{
   --card-border-radius: var(--base-border-radius);
-  --card-spacing-unit: var(--base-spacing-unit--sm);
+  --card-spacing-unit: var(--base-spacing-unit-sm);
 }
 
 .card{
@@ -16,11 +16,11 @@
 
   //Set Spacings
   &>*:first-child:not(figure){
-    margin-top: var(--base-spacing-unit--sm);
+    margin-top: var(--base-spacing-unit-sm);
   }
 
   figure{
-    margin-bottom: var(--base-spacing-unit--xs);
+    margin-bottom: var(--base-spacing-unit-xs);
   }
 
   //Button Handling

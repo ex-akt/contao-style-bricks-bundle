@@ -39,7 +39,7 @@ html{
   .nav a, .nav strong.active, a{
     color: var(--color-preheader-text);
     font-weight: normal;
-    padding: calc(var(--base-spacing-unit--xs)/2) calc(var(--base-spacing-unit--xs)/2);
+    padding: calc(var(--base-spacing-unit-xs)/2) calc(var(--base-spacing-unit-xs)/2);
   }
 }
 

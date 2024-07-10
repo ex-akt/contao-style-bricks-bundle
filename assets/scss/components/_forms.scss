@@ -89,5 +89,5 @@ input[type="checkbox"]:checked::before {
   display: grid;
   align-items: baseline;
   grid-template-columns: auto 1em;
-  gap: var(--grid__gutter--half);
+  gap: var(--grid-gutter-half);
 }

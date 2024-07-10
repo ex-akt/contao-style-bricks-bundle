@@ -1,21 +1,25 @@
-.spacing--sm{
-  padding-top: var(--base-spacing-unit--sm);
-  padding-bottom: var(--base-spacing-unit--sm);
+.spacing--sm,
+.spacing-sm{
+  padding-top: var(--base-spacing-unit-sm);
+  padding-bottom: var(--base-spacing-unit-sm);
 }
 
-.spacing--xl{
-  padding-top: var(--base-spacing-unit--xl);
-  padding-bottom: var(--base-spacing-unit--xl);
+.spacing--xl,
+.spacing-xl{
+  padding-top: var(--base-spacing-unit-xl);
+  padding-bottom: var(--base-spacing-unit-xl);
 }
 
-.spacing--lg{
-  padding-top: var(--base-spacing-unit--lg);
-  padding-bottom: var(--base-spacing-unit--lg);
+.spacing--lg,
+.spacing-lg{
+  padding-top: var(--base-spacing-unit-lg);
+  padding-bottom: var(--base-spacing-unit-lg);
 }
 
-.spacing--xs{
-  padding-top: var(--base-spacing-unit--xs);
-  padding-bottom: var(--base-spacing-unit--xs);
+.spacing--xs,
+.spacing-xs{
+  padding-top: var(--base-spacing-unit-xs);
+  padding-bottom: var(--base-spacing-unit-xs);
 }
 
 .spacing{
@@ -23,7 +27,8 @@
   padding-bottom: var(--base-spacing-unit);
 }
 
-.spacing--off{
+.spacing--off,
+.spacing-off{
   padding: 0;
   .inside{
     padding: 0;
