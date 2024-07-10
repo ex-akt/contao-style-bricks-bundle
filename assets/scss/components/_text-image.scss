@@ -1,6 +1,6 @@
 //TODO: TEXT on top of image
 
-.text-image, .text-image--mobile-below{
+.ce_text.text-image, .text-image--mobile-below{
   @include make-row-flexible();
   h1,h2,h3,h4,h5,h6, .content_container, .image_container{
     grid-column: span var(--grid__columns)/ span var(--grid__columns);
@@ -63,13 +63,96 @@ Anwendungsfall:
 Bei float_left oder float_right werden standardmäßig alle Bilder immer oberhalb des Textes dargestellt.
 Sollen Bilder "mobile" unterhalb des Textes dargestellt werden muss diese Klasse ausgewählt werden.
  */
-.text-image--mobile-below{
+.ce_text.text-image--mobile-below{
   .float_left, .float_right{
     order: 1;
   }
 
   @include media-query(screen-sm) {
     .float_left{
+      order: unset;
+    }
+  }
+}
+
+
+/**
+Rewrite for Contao 5 content-text Element
+kann entfernt werden, wenn Contao 4.x nicht mehr supported wird
+*/
+.content-text.text-image.media{
+  @include make-row-flexible();
+  
+  h1,h2,h3,h4,h5,h6, figure, div {
+    grid-column: span var(--grid-columns);
+  }
+
+  @include media-query(screen-sm) {
+    &.text-image--align-items-start{
+      align-items: start;
+    }
+    &.text-image--align-items-center{
+      align-items: center;
+    }
+    &.text-image--align-items-end{
+      align-items: end;
+    }
+  
+  
+    &.media--left,
+    &.media--right{
+      figure, div{
+        grid-column: span calc(var(--grid-columns)/2);
+      }
+    }
+
+    &.media--right figure{
+      order: 1;
+    }
+
+    // 1/3 - 2/3 Aufteilung
+    &.text-image--onethird-twothird {
+      figure{
+        grid-column: span calc(var(--grid-columns) / 3 * 2);
+      }
+      div{
+        grid-column: span calc(var(--grid-columns) / 3);
+      }
+    }
+
+    // 2/3 - 1/3 Aufteilung
+    &.text-image--twothird-onethird {
+      
+      figure{
+        grid-column: span calc(var(--grid-columns) / 3);
+      }
+      div{
+        grid-column: span calc(var(--grid-columns) / 3 * 2);
+      }
+    }
+  }
+
+  &.media--above,
+  &.media--below{
+    figure, div {
+      grid-column: span var(--grid-columns);
+    }
+  }
+}
+
+/**
+Anwendungsfall:
+Bei float_left oder float_right werden standardmäßig alle Bilder immer oberhalb des Textes dargestellt.
+Sollen Bilder "mobile" unterhalb des Textes dargestellt werden muss diese Klasse ausgewählt werden.
+ */
+ 
+.text-image--mobile-below{
+  &.media--left figure, &.media--right figure{
+    order: 1;
+  }
+
+  @include media-query(screen-sm) {
+    &.media--left figure{
       order: unset;
     }
   }
