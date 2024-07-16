@@ -16,7 +16,7 @@
         "contao/core-bundle": "^4.9 || ^5.0",
         "nutshell-framework/nutshell":"^2.0",
         "nutshell-framework/hero-element":"^1.2",
-        "erdmannfreunde/contao-grid-bundle": "^2.0",
+        "erdmannfreunde/contao-grid-bundle": "^1.0 || ^2.0",
         "oveleon/contao-component-style-manager": "^3.2",
         "inspiredminds/contao-glightbox": "^1.0"
     },
