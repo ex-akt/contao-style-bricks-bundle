@@ -5,9 +5,9 @@
   	padding-bottom: 3rem;
   	background-color: var(--color-default);
 
-	color: var(--color-text--inverted);
+	color: var(--color-text-inverted);
     a,h1,h2,h3,h4,h5,h6 {
-      color: var(--color-text--inverted);
+      color: var(--color-text-inverted);
     }
 
 	a.btn--primary,
@@ -46,8 +46,8 @@
 	//Gray with white text
   	&.band--gray{
 		background-color: var(--color-gray);
-		color: var(--color-text--inverted);
-		--headings__color: var(--color-text--inverted);
+		color: var(--color-text-inverted);
+		--headings__color: var(--color-text-inverted);
   	}
 
   	&.band--gray-light{

@@ -3,7 +3,7 @@
 .ce_text.text-image, .text-image--mobile-below{
   @include make-row-flexible();
   h1,h2,h3,h4,h5,h6, .content_container, .image_container{
-    grid-column: span var(--grid__columns)/ span var(--grid__columns);
+    grid-column: span var(--grid-columns)/ span var(--grid-columns);
   }
 
   @include media-query(screen-sm) {
@@ -19,7 +19,7 @@
 
     // float_above // float_below
     .float_above, .content_container, .float_below{
-      grid-column: span var(--grid__columns);
+      grid-column: span var(--grid-columns);
     }
 
     // float_left //float_right
@@ -28,7 +28,7 @@
     .float_right,
     .float_right + .content_container
     {
-      grid-column: span calc(var(--grid__columns)/2) / span calc(var(--grid__columns)/2);
+      grid-column: span calc(var(--grid-columns)/2) / span calc(var(--grid-columns)/2);
     }
 
     .float_right{
@@ -38,20 +38,20 @@
     // 1/3 - 2/3 Aufteilung
     &.text-image--onethird-twothird {
       .float_left, .float_right + .content_container{
-        grid-column: 1 / span calc(var(--grid__columns)/3);
+        grid-column: 1 / span calc(var(--grid-columns)/3);
       }
       .float_left + .content_container, .float_right{
-        grid-column: calc(var(--grid__columns)/3 + 1) / -1;
+        grid-column: calc(var(--grid-columns)/3 + 1) / -1;
       }
     }
 
     // 2/3 - 1/3 Aufteilung
     &.text-image--twothird-onethird {
       .float_left, .float_right + .content_container{
-        grid-column: 1 / span calc(var(--grid__columns)/3*2);
+        grid-column: 1 / span calc(var(--grid-columns)/3*2);
       }
       .float_left + .content_container, .float_right{
-        grid-column: calc(var(--grid__columns)/3*2 + 1) / -1;
+        grid-column: calc(var(--grid-columns)/3*2 + 1) / -1;
       }
     }
 

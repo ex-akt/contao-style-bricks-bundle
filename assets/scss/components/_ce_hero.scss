@@ -120,8 +120,8 @@
 
 //TODO: Übernehme Standardspacings in Style-Auswahl Backend, dann kann das entfernt werden.
 .mod_article.hero--spacing{
-  padding-bottom: var(--base-spacing-unit--lg);
-  padding-top: var(--base-spacing-unit--lg);
+  padding-bottom: var(--base-spacing-unit-lg);
+  padding-top: var(--base-spacing-unit-lg);
 }
 
 //TODO: Implementiere Chevron als Auswahl in Contao Backend
