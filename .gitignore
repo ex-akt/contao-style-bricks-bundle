@@ -3,6 +3,7 @@
 /node_modules/
 /vendor/
 /.idea/
+.DS_Store   
 
 # PhpUnit
 /phpunit.xml
