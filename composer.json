@@ -23,8 +23,7 @@
         "contao/core-bundle": "^4.9| ^5.3",
         "erdmannfreunde/euf_nutshell": "^1.0",
         "netzmacht/contao-font-awesome-inserttag": "^2.0",
-        "erdmannfreunde/contao-grid-bundle": "^1.0",
-        "erdmannfreunde/euf_hero": "^2.0",
+        "erdmannfreunde/contao-grid-bundle": "dev-master@dev",
         "fortawesome/font-awesome": "^6.0"
     },
     "require-dev": {
