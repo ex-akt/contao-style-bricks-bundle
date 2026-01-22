@@ -1,97 +1,136 @@
-.mod_article.hero--full-height{
-  height: 100vh;
-  padding: 0;
-
-  .inside,
-  .ce_hero,
-  figure{
-    height: 100%;
-    overflow: hidden;
-  }
-
-  img, video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    font-family: 'object-fit: cover;'; //IE HACK for object-fit polyfill
-  }
-}
-
-.ce_hero{
-  position: relative;
-  margin: 0 calc(var(--base-spacing-unit)*-1);
-  //margin-bottom: calc(var(--base-spacing-unit)*2);
-
-  &>.inside{
-    overflow: hidden;
-  }
-
-  .image_container{
-    img{
-      width: 100%;
-      vertical-align: bottom;
+/* ORIGINAL aus Style-Bricks 1.1 vom 22.01.2026 */
+.mod_article.vh-100{
+    .inside{
+        height: 100%;
+        overflow: hidden;
     }
-  }
 
-  //.block Statements necessary for more specific overwrite of [1]
-  &.block .content_container{
-    position:absolute;
-    top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  .button_container{
-    margin-top: var(--base-spacing-unit);
-  }
-
-  //Vertical Alignment
-  &.hero--middle{
-    .content_container{
-      top: auto;
-      bottom: 50%;
-      transform: translateY(50%);
+    img, video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        font-family: 'object-fit: cover;'; //IE HACK for object-fit polyfill
     }
-  }
+}
 
-  &.hero--bottom{
-    .content_container{
-      top: auto;
-      bottom: 10%;
+.article--full{
+    &.content--limited{
+    
+        .hero__content {
+          @include wrapper-max;
+          padding-left: var(--base-spacing-unit);
+          padding-right: var(--base-spacing-unit);
+        }
+      }
+}
+
+.content-hero, .ce_hero{
+    position: relative;
+
+    &>.inside{
+        overflow: hidden;
+      }
+
+    .hero__background{
+       img, video{
+            width: 100%;
+            vertical-align: bottom;
+       } 
     }
-  }
+
+    //.block Statements necessary for more specific overwrite of [1]
+    //&.block .content_container{
+    .hero__content{
+        position:absolute;
+        //top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+
+        &:has(>.float_above),
+        &:has(>.float_below){
+            flex-direction: column;
+        }
+    }
+
+    &.content--left .hero__content{
+        align-items: flex-start;
+    }
+    
+    &.content--center .hero__content{
+        align-items: center;
+    }
+    
+    &.content--right .hero__content{
+        align-items: flex-end;
+    }
+
+    &.content-width-75 { 
+        .hero__text,
+        .hero__image{
+            width: 75%;
+        }
+    }
+    
+    &.content-width-50 { 
+        .hero__text,
+        .hero__image{
+            width: 50%;
+        }
+    }
+    
+    &.content-width-25 { 
+        .hero__text,
+        .hero__image{
+            width: 25%;
+        }
+    }
+    
+    .hero__text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-evenly;
+    }
+
+    @include media-query(screen-md) {
+        &.content-md-width-100 .hero__text {
+          width: 100%;
+        }
+    
+        &.content-md-width-75 .hero__text {
+          width: 75%;
+        }
+    
+        &.content-md-width-50 .hero__text {
+          width: 50%;
+        }
+    
+        &.content-md-width-25 .hero__text {
+          width: 25%;
+        }
+    }
+
+    .hero__links{
+        margin-top: var(--base-spacing-unit);
+    }
+
+      //Vertical Alignment
+    &.hero--middle{
+        .hero__content{
+            align-items: center;
+        }
+    }
+
+    &.hero--bottom{
+        .hero__content{
+            justify-content: flex-end;
+        }
+    }
 }
 
-.mod_article.hero--full-width{
-  @include wrapper-max(none);
-  padding: 0;
-
-  .content_container{
-    width: $wrapper-max;
-    max-width: calc(100% - var(--base-spacing-unit));
-    //@include wrapper-max;
-    //margin set via wrapper-max [1]
-    @include padding-default;
-
-  }
-}
-
-.mod_article.hero--spacing{
-  padding-bottom: var(--base-spacing-unit--lg);
-  padding-top: var(--base-spacing-unit--lg);
-}
-
-.hero-chevron{
-  position: absolute;
-  bottom: 0;
-  z-index: 99;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 3rem;
-}
