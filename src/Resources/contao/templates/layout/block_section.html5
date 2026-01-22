@@ -1,6 +1,7 @@
+<?php $slugger = new Symfony\Component\String\Slugger\AsciiSlugger('de') ?>
 <?php if ($this->content): ?>
-<section id="<?= StringUtil::standardize($this->id, true) ?>" class="section-<?= StringUtil::standardize($this->id, true) ?>">
-    <div class="inside section-<?= StringUtil::standardize($this->id, true) ?>__inside">
+<section id="<?= $slugger->slug($this->id)->lower() ?>" class="section-<?= $slugger->slug($this->id)->lower() ?>">
+    <div class="inside section-<?= $slugger->slug($this->id)->lower() ?>__inside">
         <?= $this->content ?>
     </div>
 </section>
