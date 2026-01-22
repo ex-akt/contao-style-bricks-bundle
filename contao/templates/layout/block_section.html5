@@ -1,8 +1,9 @@
 <?php //Using section- and __inside is deprecated since Contao 5.3 and will be removed StyleBricks 2.0 ?>
 
+<?php $slugger = new Symfony\Component\String\Slugger\AsciiSlugger('de') ?>
 <?php if ($this->content): ?>
-<section id="<?= Contao\StringUtil::standardize($this->id, true) ?>" class="section-<?= Contao\StringUtil::standardize($this->id, true) ?>">
-    <div class="inside section-<?= Contao\StringUtil::standardize($this->id, true) ?>__inside">
+<section id="<?= $slugger->slug($this->id)->lower() ?>" class="section-<?= $slugger->slug($this->id)->lower() ?>">
+    <div class="inside section-<?= $slugger->slug($this->id)->lower() ?>__inside">
         <?= $this->content ?>
     </div>
 </section>
