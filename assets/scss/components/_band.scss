@@ -81,6 +81,6 @@
 }
 
 //Spezieller Einsatz von Band auf Basis von Content Elementen, färbt Hintergrund, z.B. als Infobox
-div[class*='ce_'].band{
+div[class*='content-'].band {
 	padding: var(--base-spacing-unit);
 }
