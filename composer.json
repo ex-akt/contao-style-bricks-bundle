@@ -14,7 +14,7 @@
         "contao/manager-plugin": "<2.0 || >=3.0"
     },
     "require": {
-        "contao/core-bundle": "^4.9| ^5.3",
+        "contao/core-bundle": "^4.9 || ^5.3",
         "erdmannfreunde/euf_nutshell": "^1.0",
         "nutshell-framework/hero-element": "^1.0",
         "netzmacht/contao-font-awesome-inserttag": "^2.0",
