@@ -385,5 +385,13 @@ Image Captions
       background: var(--base-overlay-background);
       color: var(--color-text-inverted);
     }
+
+    span{
+      position: absolute;
+      bottom: 10px;
+      justify-self: center;
+      padding: var(--base-spacing-unit--sm);
+      background-color: var(--color-brand);
+    }
   }
 }
